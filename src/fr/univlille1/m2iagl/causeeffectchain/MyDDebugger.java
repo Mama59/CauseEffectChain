@@ -1,6 +1,13 @@
 package fr.univlille1.m2iagl.causeeffectchain;
+import spoon.Launcher;
 
 public class MyDDebugger implements DDebugger<String> {
+	private Launcher launcher;
+	
+	public MyDDebugger() {
+		this.launcher = new Launcher();
+	}
+	
 	public MyCauseEffectChain debug(Challenge<String> c) {
 		for (String input: c.getInputs()) {
 			// run 4 times
