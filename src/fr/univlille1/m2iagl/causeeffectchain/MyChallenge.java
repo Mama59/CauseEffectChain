@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MyChallenge<I> implements Challenge<I> {
-
 	
 	public Class getInputFormat() {
 		return String.class;
