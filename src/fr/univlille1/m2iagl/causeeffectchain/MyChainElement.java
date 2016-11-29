@@ -6,8 +6,10 @@ public class MyChainElement implements ChainElement {
 	private String variable;
 	private String description;
 	
-	public MyChainElement() {
-		
+	public MyChainElement(String line, String variable, String description) {
+		this.line = line;
+		this.variable = variable;
+		this.description = description;
 	}
 	
 	public String getLine() {
