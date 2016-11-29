@@ -2,6 +2,9 @@ package fr.univlille1.m2iagl.causeeffectchain;
 
 public class MyChallenge<I> implements Challenge<I> {
 
+	private I input1;
+	private I input2;
+	
 	public Class<? extends I> getInputFormat() {
 		// TODO Auto-generated method stub
 		return null;
@@ -9,12 +12,12 @@ public class MyChallenge<I> implements Challenge<I> {
 
 	public I getInput1() {
 		// TODO Auto-generated method stub
-		return null;
+		return input1;
 	}
 
 	public I getInput2() {
 		// TODO Auto-generated method stub
-		return null;
+		return input2;
 	}
 
 	public boolean oracle(I input) {
@@ -24,7 +27,8 @@ public class MyChallenge<I> implements Challenge<I> {
 
 	public CauseEffectChain computeTrace(I x, I y) {
 		// TODO Auto-generated method stub
-		return null;
+		CauseEffectChain cause = new CauseEffectChain();
+		return cause;
 	}
 
 }
