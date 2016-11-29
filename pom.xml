@@ -19,43 +19,4 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
-    <!--    <build>
-
-        <sourceDirectory>src/main/java</sourceDirectory>
-        <testSourceDirectory>src/test/java</testSourceDirectory>
-
-        <plugins>
-
-            <plugin>
-                <groupId>org.pitest</groupId>
-                <artifactId>pitest-maven</artifactId>
-                <version>1.1.5</version>
-                <configuration>
-                    <timeoutConstant>5000</timeoutConstant>
-                    <targetClasses>
-                        <param>${pitest.targetClasses}</param>
-                    </targetClasses>
-                    <targetTests>
-                        <param>${pitest.targetTests}</param>
-                    </targetTests>
-                    <timestampedReports>${pitest.timestampedReports}</timestampedReports>
-                    <threads>${pitest.threads}</threads>
-                    <historyOutputFile>${project.build.directory}/pit-reports/pitest.history</historyOutputFile>
-                    <historyInputFile>${project.build.directory}/pit-reports/pitest.history</historyInputFile>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>pitest-mutationCoverage</id>
-                        <goals>
-                            <goal>mutationCoverage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-        </plugins>
-
-    </build>
--->
-
 </project>
