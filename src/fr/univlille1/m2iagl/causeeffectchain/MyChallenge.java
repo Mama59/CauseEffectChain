@@ -1,30 +1,24 @@
 package fr.univlille1.m2iagl.causeeffectchain;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class MyChallenge<I> implements Challenge<I> {
-
-	public Class<? extends I> getInputFormat() {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public Class getInputFormat() {
+		return String.class;
 	}
 
-	public I getInput1() {
-		// TODO Auto-generated method stub
-		return null;
+	public List getInputs() {
+		return Arrays.asList(new String[]{"foo", "bar"});
 	}
 
-	public I getInput2() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public boolean oracle(I input) {
-		// TODO Auto-generated method stub
+	public boolean oracle(Object input) {
 		return false;
 	}
 
-	public CauseEffectChain computeTrace(I x, I y) {
-		// TODO Auto-generated method stub
-		return null;
+	public String getJavaProgram() {
+		return "foo";
 	}
 
 }

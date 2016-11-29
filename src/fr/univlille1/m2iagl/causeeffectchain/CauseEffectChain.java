@@ -8,3 +8,4 @@ import java.util.List;
 public interface CauseEffectChain {
 	public List<ChainElement> getChain();
 }
+

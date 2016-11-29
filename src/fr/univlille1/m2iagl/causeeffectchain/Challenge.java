@@ -1,5 +1,7 @@
 package fr.univlille1.m2iagl.causeeffectchain;
 
+import java.util.List;
+
 import static javafx.scene.input.KeyCode.T;
 
 /**
@@ -7,8 +9,7 @@ import static javafx.scene.input.KeyCode.T;
  */
 public interface Challenge<I> {
 	Class<? extends I> getInputFormat();
-	I getInput1();
-	I getInput2();
+	List<I> getInputs();
 	boolean oracle(I input);
-	CauseEffectChain computeTrace(I x, I y);
+	String getJavaProgram();
 }
