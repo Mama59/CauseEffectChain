@@ -20,6 +20,7 @@ public class MyFirstChallenge<I> implements Challenge<I> {
 
 	public void challenge(I input) {
 		try {
+			System.out.println("Do it " + input);
 			doIt(input);
 		} catch (Exception e) {
 			System.out.println("exception");

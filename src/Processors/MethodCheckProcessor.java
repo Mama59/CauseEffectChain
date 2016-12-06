@@ -1,5 +1,6 @@
-package DDebugger;
+package Processors;
 
+import Methods.CheckMethod;
 import spoon.processing.AbstractProcessor;
 import spoon.reflect.declaration.CtMethod;
 

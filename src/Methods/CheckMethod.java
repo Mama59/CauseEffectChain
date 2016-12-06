@@ -1,10 +1,12 @@
-package DDebugger;
+package Methods;
 
 import spoon.reflect.code.CtStatement;
 import spoon.reflect.declaration.CtMethod;
 import spoon.reflect.declaration.CtParameter;
+import spoon.reflect.declaration.CtVariable;
+import spoon.reflect.visitor.filter.TypeFilter;
 
-public class CheckMethod {
+public class CheckMethod<I> {
 	private CtMethod<?> method;
 
 	public CheckMethod(CtMethod<?> method) {
@@ -19,20 +21,28 @@ public class CheckMethod {
 	//		CtCodeSnippetStatement stmt = method.getFactory().Core().createCodeSnippetStatement();
 
 	public void verifier() {
-		if(method.getSimpleName().equals("doIt")){
+		/*
+		 if(method.getSimpleName().equals("doIt")){
 			System.out.println("Method : " + method);
-			
+
 			System.out.println("Name : " + method.getSimpleName());
-			
+
 			System.out.println("Parameters :");
 			for(CtParameter<?> parameter : method.getParameters()) {
 				System.out.println("\t" + parameter);
+				System.out.println(parameter);
 			}
-			
+
 			System.out.println("Statements " + method.getBody().getStatements().size());
 			for (CtStatement statement : method.getBody().getStatements()) {
 				System.out.println("\t" + statement);
 			}
+
+			System.out.println("Variables :");
+			for (CtVariable variable : method.getElements(new TypeFilter<CtVariable<?>>(CtVariable.class))) {
+				System.out.println("\t" + variable.getSimpleName() + " = " + variable.getDefaultExpression());
+			}
 		}
+		 */
 	}
 }
