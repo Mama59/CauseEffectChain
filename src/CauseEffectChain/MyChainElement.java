@@ -1,4 +1,4 @@
-package fr.univlille1.m2iagl.causeeffectchain;
+package CauseEffectChain;
 
 public class MyChainElement implements ChainElement {
 
@@ -14,17 +14,17 @@ public class MyChainElement implements ChainElement {
 	
 	public String getLine() {
 		// TODO Auto-generated method stub
-		return null;
+		return line;
 	}
 
 	public String getVariable() {
 		// TODO Auto-generated method stub
-		return null;
+		return variable;
 	}
 
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return null;
+		return description;
 	}
 
 }

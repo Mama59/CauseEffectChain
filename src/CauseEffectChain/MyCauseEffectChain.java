@@ -1,4 +1,4 @@
-package fr.univlille1.m2iagl.causeeffectchain;
+package CauseEffectChain;
 
 import java.util.ArrayList;
 import java.util.List;
