@@ -1,4 +1,4 @@
-package Challenge;
+package fr.univlille1.m2iagl.opl.causechaineffect.challenge;
 
 import java.util.List;
 

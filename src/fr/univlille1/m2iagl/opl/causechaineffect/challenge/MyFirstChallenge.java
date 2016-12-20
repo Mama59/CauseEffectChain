@@ -1,4 +1,4 @@
-package Challenge;
+package fr.univlille1.m2iagl.opl.causechaineffect.challenge;
 
 import java.util.Arrays;
 import java.util.List;
@@ -11,7 +11,7 @@ public class MyFirstChallenge<I> implements Challenge<I> {
 	}
 
 	public List getInputs() {
-		return Arrays.asList(new String[]{"1", "test"});
+		return Arrays.asList(new String[]{"test"});
 	}
 
 	public String getJavaProgram() {
@@ -30,7 +30,6 @@ public class MyFirstChallenge<I> implements Challenge<I> {
 
 	public Object doIt(I input){
 		String inputToParse = (String) input;
-		String test = "inutile";
 		return Integer.parseInt(inputToParse);
 	}
 }
