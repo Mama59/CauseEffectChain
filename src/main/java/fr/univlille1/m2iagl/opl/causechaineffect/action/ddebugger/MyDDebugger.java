@@ -1,10 +1,5 @@
 package fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import fr.univlille1.m2iagl.opl.causechaineffect.action.helper.Helper;
 import fr.univlille1.m2iagl.opl.causechaineffect.challenge.Challenge;
 import fr.univlille1.m2iagl.opl.causechaineffect.jdb.JDBHelper;
@@ -13,6 +8,9 @@ import fr.univlille1.m2iagl.opl.causechaineffect.model.Breakpoint;
 import fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArray;
 import fr.univlille1.m2iagl.opl.causechaineffect.model.CauseEffectChain;
 import fr.univlille1.m2iagl.opl.causechaineffect.model.Constants;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class MyDDebugger implements DDebugger<String> {
 
@@ -40,7 +38,7 @@ public class MyDDebugger implements DDebugger<String> {
 
 	private <I> CauseEffectChain internalDebug(Challenge<I> challenge, I rightInput, I wrongInput, BreakpointArray breakpointArray) {
 
-		// On lance les 2 programmes pour chaque élément de la chaine de cause à effet pour faire la différence entre toutes les variables locales
+		// On lance les 2 programmes pour chaque Ã©lÃ©ment de la chaine de cause Ã  effet pour faire la diffÃ©rence entre toutes les variables locales
 		CauseEffectChain causeEffectChain = new CauseEffectChain(breakpointArray);
 		
 		for(int i=0;i<breakpointArray.length();i++){
@@ -71,7 +69,7 @@ public class MyDDebugger implements DDebugger<String> {
 			challenge.doIt(input);
 			return null;
 		} catch(Exception e){
-			// Dans le catch, sauvegarde de la pile d'exécution
+			// Dans le catch, sauvegarde de la pile d'exÃ©cution
 			StackTraceElement[] array =  e.getStackTrace();
 
 			List<Breakpoint> causeChainElements = new ArrayList<Breakpoint>();
