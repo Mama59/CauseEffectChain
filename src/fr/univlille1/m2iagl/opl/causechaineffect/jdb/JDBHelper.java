@@ -16,14 +16,18 @@ public class JDBHelper {
 
 	private String mainClass;
 	private Breakpoint breakpoint;
-
+	private int index;
+	
+	
 	private BufferedWriter writer;
 
 	private Map<String, Object> vars;
+	
 
-	public JDBHelper(String mainClass, Breakpoint breakpoint) {
+	public JDBHelper(String mainClass, Breakpoint breakpoint, int index) {
 		this.mainClass = mainClass;
 		this.breakpoint = breakpoint;
+		this.index = index;
 	}
 
 	public void launch() {
@@ -41,7 +45,7 @@ public class JDBHelper {
 			writeCommand("stop at " + breakpoint.toString());
 			getOutput(stdout);
 			
-			writeCommand("run " + mainClass);
+			writeCommand("run " + mainClass + " " + index);
 			getOutput(stdout);
 
 			writeCommand("locals");

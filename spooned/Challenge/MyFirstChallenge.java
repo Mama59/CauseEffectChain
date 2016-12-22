@@ -3,7 +3,7 @@
 package Challenge;
 
 
-public class MyFirstChallenge<I> implements Challenge.Challenge<I> {
+public class MyFirstChallenge<I> implements fr.univlille1.m2iagl.opl.causechaineffect.challenge.Challenge<I> {
     public java.lang.Class<? extends I> getInputFormat() {
         return ((java.lang.Class<? extends I>) (java.lang.Integer.class));
     }
