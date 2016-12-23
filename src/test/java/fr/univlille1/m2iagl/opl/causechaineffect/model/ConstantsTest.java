@@ -11,10 +11,11 @@ public class ConstantsTest {
     @Test
     public void init_WindowsOs_ShouldReturnDoubleAntiSlash() {
         String result = "\\";
+        Constants newConstants = new Constants();
         
         System.setProperty("os.name","windows");
 
-        Constants.init();
+        newConstants.init();
         String expResult = Constants.SEPARATOR;
         
         assertEquals(expResult, result);
@@ -23,10 +24,11 @@ public class ConstantsTest {
     @Test
     public void init_LinuxOs_ShouldReturnSlash() {
         String result = "/";
+        Constants newConstants = new Constants();
         
         System.setProperty("os.name","linux");
 
-        Constants.init();
+        newConstants.init();
         String expResult = Constants.SEPARATOR;
         
         assertEquals(expResult, result);

@@ -18,13 +18,14 @@ public class HelperTest {
         Map<String, Object> firstMap = new HashMap<>();
         Map<String, Object> secondMap = new HashMap<>();
         List<String> expResult = new ArrayList<String>();
+        Helper newHelper = new Helper();
         
         firstMap.put("a","test");
         firstMap.put("b","test"); 
         secondMap.put("a","test");
         secondMap.put("b","test");
         
-        List<String> result = Helper.getKeysWithDifferentValues(firstMap, secondMap);
+        List<String> result = newHelper.getKeysWithDifferentValues(firstMap, secondMap);
         assertEquals(expResult, result);
     }
     
@@ -33,13 +34,14 @@ public class HelperTest {
         Map<String, Object> firstMap = new HashMap<>();
         Map<String, Object> secondMap = new HashMap<>();
         List<String> expResult = new ArrayList<String>();
+        Helper newHelper = new Helper();
         
         firstMap.put("a","test");
         firstMap.put("c","test"); 
         secondMap.put("a","test");
         secondMap.put("b","test");
         
-        List<String> result = Helper.getKeysWithDifferentValues(firstMap, secondMap);
+        List<String> result = newHelper.getKeysWithDifferentValues(firstMap, secondMap);
         expResult.add("c");
         assertEquals(expResult, result);
     }
