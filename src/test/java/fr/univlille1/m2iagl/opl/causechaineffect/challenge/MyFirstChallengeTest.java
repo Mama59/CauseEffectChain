@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class MyFirstChallengeTest {
-    
+
     /**
      * Test of getInputFormat method, of class MyFirstChallenge.
      */
@@ -40,6 +40,18 @@ public class MyFirstChallengeTest {
         String expResult = "public Object doIt(String input){ return Integer.parseInt(input)}";
         String result = myFirstChallenge.getJavaProgram();
         assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testDoIt(){
+        MyFirstChallenge myFirstChallenge = new MyFirstChallenge();
+        Object input = "7";
+        myFirstChallenge.challenge(input);
+        
+        Object expResult = 7;
+        Object result = myFirstChallenge.doIt(input);
+        assertEquals(expResult, result);
+
     }
 
     /**
