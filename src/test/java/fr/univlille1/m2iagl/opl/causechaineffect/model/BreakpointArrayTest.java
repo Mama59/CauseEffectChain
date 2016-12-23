@@ -1,5 +1,6 @@
 package fr.univlille1.m2iagl.opl.causechaineffect.model;
 
+import java.lang.reflect.Field;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
@@ -19,6 +20,19 @@ public class BreakpointArrayTest {
         Breakpoint expResult = new Breakpoint(4,"secondTestFileName");
         Breakpoint result = breakPointArray.get(i);
         assertEquals(expResult.toString(), result.toString());
+    }
+    
+    @Test
+    public void testArrayFieldValue() throws NoSuchFieldException, IllegalArgumentException, IllegalAccessException{
+        Breakpoint[] br;
+        br = new Breakpoint[2];
+        br[0]= new Breakpoint(7,"firstTestFileName");
+        br[1]= new Breakpoint(4,"secondTestFileName");
+        BreakpointArray breakPointArray = new BreakpointArray(br);
+        
+        Field field = BreakpointArray.class.getDeclaredField("array");
+        String typeNameResult = field.get(breakPointArray).toString();
+        assertEquals(br.toString(), typeNameResult);
     }
 
     /**
