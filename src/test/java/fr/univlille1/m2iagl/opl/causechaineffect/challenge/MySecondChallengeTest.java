@@ -45,6 +45,18 @@ public class MySecondChallengeTest {
     }
     
     @Test
+    public void testDoIt(){
+        MySecondChallenge mysecondChallenge = new MySecondChallenge();
+        Object input = "7";
+        mysecondChallenge.challenge(input);
+        
+        Object expResult = 7;
+        Object result = mysecondChallenge.doIt(input);
+        assertEquals(expResult, result);
+
+    }
+    
+    @Test
     public void challengeThrowException() {
         MySecondChallenge mysecondChallenge = new MySecondChallenge();
         Set myset = new HashSet();
