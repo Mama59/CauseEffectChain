@@ -47,10 +47,12 @@ public class MyFirstChallengeTest {
     @Test
     public void testDoIt(){
         MyFirstChallenge myFirstChallenge = new MyFirstChallenge();
-        Object input = "7";
+        Object input = null;
+        input = "7";
         myFirstChallenge.challenge(input);
         
-        Object expResult = 7;
+        Object expResult = null;
+        expResult = 7;
         Object result = myFirstChallenge.doIt(input);
         assertEquals(expResult, result);
 
@@ -61,6 +63,7 @@ public class MyFirstChallengeTest {
     MyFirstChallenge myFirstChallenge = new MyFirstChallenge();
 
     Set myset = new HashSet();
+    myset.add("a");
     
     myFirstChallenge.challenge(myset);
   }
