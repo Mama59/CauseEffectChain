@@ -73,11 +73,12 @@ public class BreakpointArrayTest {
     @Test
     public void toString_ValideFileNameAndLineNumber_ShouldReturnFileNameAndLineNumber() {
         Breakpoint[] br;
-        br = new Breakpoint[1];
+        br = new Breakpoint[2];
         br[0]= new Breakpoint(7,"firstTestFileName");
+        br[1]= new Breakpoint(9,"secondTestFileName");
         BreakpointArray breakPointArray = new BreakpointArray(br);
         String result = breakPointArray.toString();
-        String expResult = "[firstTestFileName:7]";
+        String expResult = "[firstTestFileName:7, secondTestFileName:9]";
         
         assertEquals(expResult, result);
     }
