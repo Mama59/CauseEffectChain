@@ -1,7 +1,9 @@
 package fr.univlille1.m2iagl.opl.causechaineffect.challenge;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
@@ -40,6 +42,13 @@ public class MySecondChallengeTest {
         String expResult = "public Object doIt(String input){ return Integer.parseInt(input)}";
         String result = mysecondChallenge.getJavaProgram();
         assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void challengeThrowException() {
+        MySecondChallenge mysecondChallenge = new MySecondChallenge();
+        Set myset = new HashSet();
+        mysecondChallenge.challenge(myset);
     }
 
     /**
