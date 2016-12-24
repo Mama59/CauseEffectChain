@@ -60,8 +60,6 @@ public class MySecondChallengeTest {
     public void challengeThrowException() {
         MySecondChallenge mysecondChallenge = new MySecondChallenge();
         Set myset = new HashSet();
-        
-        myset.add("a");
         mysecondChallenge.challenge(myset);
     }
 
