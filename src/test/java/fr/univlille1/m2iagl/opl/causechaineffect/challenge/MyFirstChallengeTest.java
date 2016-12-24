@@ -1,7 +1,9 @@
 package fr.univlille1.m2iagl.opl.causechaineffect.challenge;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
@@ -53,6 +55,15 @@ public class MyFirstChallengeTest {
         assertEquals(expResult, result);
 
     }
+    
+    @Test
+    public void challengeThrowException() {
+    MyFirstChallenge myFirstChallenge = new MyFirstChallenge();
+
+    Set myset = new HashSet();
+    
+    myFirstChallenge.challenge(myset);
+  }
 
     /**
      * Test of doIt method, of class MyFirstChallenge.
