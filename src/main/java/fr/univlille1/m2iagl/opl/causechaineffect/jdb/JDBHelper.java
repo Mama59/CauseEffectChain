@@ -1,5 +1,7 @@
 package fr.univlille1.m2iagl.opl.causechaineffect.jdb;
 
+import fr.univlille1.m2iagl.opl.causechaineffect.model.Breakpoint;
+import fr.univlille1.m2iagl.opl.causechaineffect.model.Constants;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
@@ -8,9 +10,6 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.util.HashMap;
 import java.util.Map;
-
-import fr.univlille1.m2iagl.opl.causechaineffect.model.Breakpoint;
-import fr.univlille1.m2iagl.opl.causechaineffect.model.Constants;
 
 public class JDBHelper {
 
@@ -34,7 +33,7 @@ public class JDBHelper {
 		try {
 			ProcessBuilder builder = new ProcessBuilder("jdb");
 			// Set the working dir to the 'bin' dir
-			builder.directory(new File(System.getProperty("user.dir") + Constants.SEPARATOR + "bin"));
+			builder.directory(new File(System.getProperty("user.dir") + Constants.SEPARATOR + "target" + Constants.SEPARATOR + "classes"));
 			Process process = builder.start();
 			
 			OutputStream stdin = process.getOutputStream();
