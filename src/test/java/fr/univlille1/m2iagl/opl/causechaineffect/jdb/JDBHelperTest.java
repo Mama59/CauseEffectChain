@@ -16,7 +16,7 @@ public class JDBHelperTest {
     @Test
     public void testLaunch() throws IllegalArgumentException, IllegalAccessException, NoSuchFieldException, IOException {
         JDBHelper jdbHelper = new JDBHelper("fr.univlille1.m2iagl.opl.causechaineffect.main.LaunchJDBMain",new Breakpoint(33,"fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFirstChallenge"),0);
-        //System.setProperty("os.name","linux");
+        System.setProperty("os.name","linux");
         Constants.init();
         jdbHelper.launch();
         
