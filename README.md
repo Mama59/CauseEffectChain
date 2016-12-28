@@ -1,8 +1,8 @@
 # Repair with analysis of cause-effect chains. [![Build Status](https://travis-ci.org/Mama59/CauseEffectChain.svg?branch=master)](https://travis-ci.org/Mama59/CauseEffectChain) [![Coverage Status](https://coveralls.io/repos/github/Mama59/CauseEffectChain/badge.svg?branch=master)](https://coveralls.io/github/Mama59/CauseEffectChain?branch=master)
 
-Delta-debugging for Java, by Marine Bal, Antonin Durey, José Pansa and Badr Rahal.
+Delta-debugging for Java, by Marine Bal, Antonin Durey, José Pansa and Badr Rahal. Mama59/CauseEffectChain
 
-## **Mutation Coverage** : **73%**
+## [**Mutation Coverage** : **73%**](https://mama59.github.io/CauseEffectChain/ "Pitest Mutation Coverage Report") 
 
 To provide high standard test coverage for our Delta-debugging tool, we used Pitest, a mutation testing system for Java.
 
@@ -37,7 +37,10 @@ Or to speed-up repeated analysis of the same codebase, you can use this command 
 mvn -DwithHistory=true org.pitest:pitest-maven:mutationCoverage
 ```
 
-This will output an html report **index.html** to **target/pit-reports/YYYYMMDDHHMI.
+This will output an html report **index.html** to **target/pit-reports**.
+
+
+https://rbadr.github.io/analysis-of-cause-effect-chains/
 
 
 
