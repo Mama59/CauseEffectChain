@@ -32,12 +32,12 @@ mvn clean install
 mvn org.pitest:pitest-maven:mutationCoverage
 ```
 
-To speed-up repeated analysis of the same codebase :
+Or to speed-up repeated analysis of the same codebase, you can use this command to generate the mutation coverage report :
 ```
 mvn -DwithHistory=true org.pitest:pitest-maven:mutationCoverage
 ```
 
-This will output an html report to **target/pit-reports/YYYYMMDDHHMI/index.html**.
+This will output an html report **index.html** to **target/pit-reports/YYYYMMDDHHMI.
 
 
 
