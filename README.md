@@ -40,8 +40,5 @@ mvn -DwithHistory=true org.pitest:pitest-maven:mutationCoverage
 This will output an html report **index.html** to **target/pit-reports**.
 
 
-https://rbadr.github.io/analysis-of-cause-effect-chains/
-
-
 
 
