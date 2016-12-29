@@ -5,7 +5,7 @@ before_script:
 - chmod +x .utility/update-gh-pages.sh
 after_success:
 - mvn clean test jacoco:report coveralls:report
-- mvn -DwithHistory=true org.pitest:pitest-maven:mutationCoverage
+- mvn org.pitest:pitest-maven:mutationCoverage
 - .utility/update-gh-pages.sh
 env:
   global:
