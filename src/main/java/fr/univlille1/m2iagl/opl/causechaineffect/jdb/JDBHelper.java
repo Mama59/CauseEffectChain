@@ -1,5 +1,7 @@
 package fr.univlille1.m2iagl.opl.causechaineffect.jdb;
 
+import fr.univlille1.m2iagl.opl.causechaineffect.model.Breakpoint;
+import fr.univlille1.m2iagl.opl.causechaineffect.model.Constants;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
@@ -10,9 +12,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import fr.univlille1.m2iagl.opl.causechaineffect.model.Breakpoint;
-import fr.univlille1.m2iagl.opl.causechaineffect.model.Constants;
 
 public class JDBHelper {
 

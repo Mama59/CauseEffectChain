@@ -1,11 +1,11 @@
 package fr.univlille1.m2iagl.opl.causechaineffect.main;
 
 import fr.univlille1.m2iagl.opl.causechaineffect.challenge.Challenge;
-import fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallenge;
+import fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFirstChallenge;
 
 public class LaunchJDBMain {
 	
-	public static Challenge<String[]> challenge = new MyThirdChallenge();
+	public static Challenge<String> challenge = new MyFirstChallenge();
 	
 	public static void main(String[] args){
 		int index = Integer.parseInt(args[0]);

@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class BreakpointTest {
     
-    Breakpoint instance = new Breakpoint(5,"testfilename");
+    Breakpoint instance = new Breakpoint(5,"testfilename",1);
 
     /**
      * Test of getLine method, of class Breakpoint.
