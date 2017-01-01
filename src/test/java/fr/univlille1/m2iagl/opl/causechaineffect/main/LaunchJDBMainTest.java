@@ -9,9 +9,10 @@ public class LaunchJDBMainTest {
      */
     @Test(expected=NumberFormatException.class)
     public void testMain() {
+        LaunchJDBMain launch= new LaunchJDBMain();
         String[] args = new String[1];
         args[0]="1";
-        LaunchJDBMain.main(args);
+        launch.main(args);
     }
     
 }

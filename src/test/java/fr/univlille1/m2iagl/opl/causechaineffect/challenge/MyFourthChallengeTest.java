@@ -66,9 +66,11 @@ public class MyFourthChallengeTest {
      */
     @Test(expected=RuntimeException.class)
     public void testDoItRuntimeException() {
-        String input = "Azorty";
+        String input = "aaa";
         MyFourthChallenge instance = new MyFourthChallenge();
-        instance.doIt(input);
+        String expResult = "Wrong";
+        String result = instance.doIt(input);
+        assertEquals(expResult, result);
     }
     
     /**
