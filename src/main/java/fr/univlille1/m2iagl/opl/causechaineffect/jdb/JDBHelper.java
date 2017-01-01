@@ -26,9 +26,12 @@ public class JDBHelper {
 	private Map<String, String> vars;
 	
 	private String[] varsToDump;
+	
+	private boolean verbose;
 
 
-	public JDBHelper(String mainClass, Breakpoint breakpoint, int index) {
+	public JDBHelper(boolean verbose, String mainClass, Breakpoint breakpoint, int index) {
+		this.verbose = verbose;
 		this.mainClass = mainClass;
 		this.breakpoint = breakpoint;
 		this.index = index;
@@ -37,7 +40,6 @@ public class JDBHelper {
 	public void launch() {
 		try {
 			ProcessBuilder builder = new ProcessBuilder("jdb");
-			// Set the working dir to the 'bin' dir
 			builder.directory(new File(Constants.FOLDER));
 			Process process = builder.start();
 
@@ -70,6 +72,8 @@ public class JDBHelper {
 		} catch (Exception ex) {
 			if(ex.getMessage() != null && ex.getMessage().equals(Constants.CANAL_MESSAGE)){
 				vars = null;
+				if(verbose)
+					System.out.println("-----------------------------");
 			} else {
 				ex.printStackTrace();
 			}
@@ -85,6 +89,9 @@ public class JDBHelper {
 
 	private void writeCommand(String command) throws Exception {
 		// System.out.println(command);
+		if(verbose)
+			System.out.println(command);
+		
 		writer.write(command + "\n");
 		writer.flush();
 		Thread.sleep(Constants.MS_BETWEEN_COMMAND);

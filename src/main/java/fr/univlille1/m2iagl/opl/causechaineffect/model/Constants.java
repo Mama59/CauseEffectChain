@@ -20,6 +20,7 @@ public class Constants {
 	
 	public final static String INSTANCE_OF = "instance of";
 	
+	
 	public static String FOLDER;
 
 	public static void init(){

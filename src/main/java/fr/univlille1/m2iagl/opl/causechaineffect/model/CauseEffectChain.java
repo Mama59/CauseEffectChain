@@ -32,9 +32,8 @@ public class CauseEffectChain {
 		String s = "";
 
 		for(int i=0;i<breakpointArray.length();i++){
-			s += "At " + breakpointArray.get(i).toString() + " : ";
+			s += "At " + breakpointArray.get(i).toString() + " : \n\t";
 
-			ValueFormatter formatter = new ValueFormatter();
 			
 			if(varNames.get(i).size() == 0){
 				s += "No variables values differences";
@@ -43,12 +42,10 @@ public class CauseEffectChain {
 			for(int j=0;j<varNames.get(i).size();j++){
 				String varName = varNames.get(i).get(j);
 
-				formatter.format(wrongValues.get(i).get(j));
-				s += varName + " was " + formatter.getValueToString() + " - ";
+				s += varName + " was " + ValueFormatter.format(wrongValues.get(i).get(j)) + " - ";
 
 				if(rightValues.get(i).get(j) != null){
-					formatter.format(rightValues.get(i).get(j));
-					s += formatter.getValueToString() + " with a right input,";
+					s += ValueFormatter.format(rightValues.get(i).get(j)) + " with a right input,";
 				} else {
 					s += "With the right input(s), the program did not reach that point,";
 				}
@@ -58,7 +55,7 @@ public class CauseEffectChain {
 			s += "\n";
 		}
 
-		s += "Then, the app crashed with a '" + exceptionType + "' !\n";
+		s += "Then, the app crashed with a " + exceptionType + "\n";
 
 		return s;
 	}

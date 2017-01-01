@@ -31,12 +31,8 @@ public class MyFifthChallenge implements Challenge<String>{
 
 	@Override
 	public String doIt(String input) {
-		
 		Map<Character, Integer> charCpt = new HashMap<Character, Integer>();
 		initMap(charCpt);
-		
-		
-		
 		
 		return recursif(input, charCpt);
 	}
@@ -49,8 +45,6 @@ public class MyFifthChallenge implements Challenge<String>{
 		treatChar(charCpt, input.charAt(0));
 		
 		return recursif(input.substring(1, input.length()), charCpt);
-		
-		
 	}
 	
 	private void treatChar(Map<Character, Integer> charCpt, char c){
@@ -60,15 +54,12 @@ public class MyFifthChallenge implements Challenge<String>{
 	
 	private void incrementsCharCpt(Map<Character, Integer> charCpt, char c){
 		charCpt.put(c, charCpt.get(c) + 1);
-		
 	}
 	
 	private void initMap(Map<Character, Integer> charCpt){
 		for(int i='a';i<'z'+1;i++){
 			charCpt.put((char) i, 0);
 		}
-		
-		
 		for(int i='A';i<'Z'+1;i++){
 			charCpt.put((char) i, 0);
 		}

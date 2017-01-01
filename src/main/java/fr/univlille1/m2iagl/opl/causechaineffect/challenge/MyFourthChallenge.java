@@ -33,7 +33,7 @@ public class MyFourthChallenge implements Challenge<String>{
 		if(A(length) && (B(c) || C(d))){
 			return "OK";
 		} else {
-			throw new RuntimeException("The input does not satisfy the given constraints");
+			return "Wrong";
 		}
 	}
 	
@@ -46,7 +46,7 @@ public class MyFourthChallenge implements Challenge<String>{
 	}
 
 	private boolean C(char d){
-		return Character.isLowerCase(d);
+		throw new RuntimeException("The input does not satisfy the given constraints");
 		
 	}
 	
