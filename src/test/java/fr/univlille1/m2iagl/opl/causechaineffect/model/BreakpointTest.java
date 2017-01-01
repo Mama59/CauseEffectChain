@@ -37,4 +37,11 @@ public class BreakpointTest {
         assertEquals(expResult, result);
     }
     
+    @Test
+    public void testGetNbr(){
+        int expResult = 1;
+        int result = instance.getNb();
+        assertEquals(expResult, result);
+    }
+    
 }
