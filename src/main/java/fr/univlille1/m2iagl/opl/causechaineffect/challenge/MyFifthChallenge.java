@@ -16,7 +16,7 @@ public class MyFifthChallenge implements Challenge<String>{
 	@Override
 	public List<String> getInputs() {
 		return Arrays.asList(new String[]{"Ceci est un texte ou il faut savoir quelle est la lettre la plus utilisee",
-				"Cecî est un texte où il faut savoir quelle est la lettre la plus utilisée"});
+				"CecÃ® est un texte oÃ¹ il faut savoir quelle est la lettre la plus utilisÃ©e"});
 	}
 	
 	@Override

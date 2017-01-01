@@ -16,12 +16,12 @@ public class Constants {
 	public final static String LOCAL_VARIABLES = "Local variables";
 	public final static String MAIN = "main";
 	
-	public final static String CANAL_MESSAGE = "Le canal de communication est sur le point d’être fermé";
+	public final static String CANAL_MESSAGE = "Le canal de communication est sur le point d'Ãªtre fermÃ©";
 	
 	public final static String INSTANCE_OF = "instance of";
 	
-	
-	public static String FOLDER;
+	public static String FOLDER = System.getProperty("user.dir") + Constants.SEPARATOR + "target" + Constants.SEPARATOR + "classes";
+
 
 	public static void init(){
 		String os = System.getProperty("os.name").toLowerCase();
@@ -30,7 +30,5 @@ public class Constants {
 			SEPARATOR = "\\";
 		else
 			SEPARATOR = "/";
-		
-		FOLDER = System.getProperty("user.dir") + Constants.SEPARATOR + "bin";
 	}
 }
