@@ -1,12 +1,13 @@
 language: java
 sudo: false
-script: mvn clean verify
+jdk:
+  - oraclejdk8
 before_script:
-- chmod +x .utility/update-gh-pages.sh
+  - chmod +x .utility/update-gh-pages.sh
 after_success:
-- mvn clean test jacoco:report coveralls:report
-- mvn org.pitest:pitest-maven:mutationCoverage
-- .utility/update-gh-pages.sh
+  - mvn clean test jacoco:report coveralls:report
+  - mvn org.pitest:pitest-maven:mutationCoverage
+  - .utility/update-gh-pages.sh
 env:
   global:
   - secure: 0KuhSA60Hjs1mFe/F0JhD2Ao5MKI/Fu+YNX3VWec5Kru20mNJ2XXJUK6P+kgCE8n5hGHvskpxuhb1k40AywfGUDVFsaesl1oAnkLaGzcSc5ulzpAow3e/VxV/FPPCGS7xkipa1GXQT4KpabheFmjwVzBp/Pbxk4PG5T5VLQ7ytWO1DUXUacBfsSMgds3W8dmH34viJ4In4y/8UJ87Xe7OeFJlznbrXBQifNmupYQiFC2+XajMHLdTan6SZdUrAL19brHpL0K39GPAQgfVMTW3ctHZNGpgYCRFgvVhrMBAyKJZwwP7uRE5ST/+Nv8qBI3drcdeHw60qePk2JKB8oQDivJ07UV4ZqzANdHlx94LzEeF/j8CyBK370qEaWz/FiK01uFnDUR0YmZ1Ya4yxZzAdrZpszXJcDiZRd+pDQ+HA15Gc/AxVCJJaLS+kBeRzpCJAAdW//ryrp3QslLTAH7MOXExWt1b1Q9wUf+iOmcavCdWDyzEjRqPL9sO5ugL8qZRNVw9uv+pasgPratICbv8SFndzV0lGS/x7SRD0xTUeYa0QETWO9kGmWR0vr0vK4SQ6RxwyBkRgPJcxCIk9pf2mIL5fEOQaTuVc3cgzmpNDBuAuPmLe0bxWIB9AwRPl9WZ4kpYTfvi0rIwoYCTupcdl61ZDtjbYuMNeMJbMKZM6U=
