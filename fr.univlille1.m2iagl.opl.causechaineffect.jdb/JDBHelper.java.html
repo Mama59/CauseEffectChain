@@ -647,7 +647,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;builder.directory(new File(Constants.folder));</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;builder.directory(new File(Constants.FOLDER));</span></pre></td></tr>
 
 
 <tr>
@@ -1140,7 +1140,7 @@ body{
 
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>                                {System.out.println(&#34;-----------------------------&#34;);}</span></pre></td></tr>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;&#9;&#9;System.out.println(&#34;-----------------------------&#34;);</span></pre></td></tr>
 
 
 <tr>
@@ -1348,19 +1348,17 @@ body{
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_90'/>
 90
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_90'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_90'></a>
 <span>
-1. writeCommand : negated conditional &rarr; SURVIVED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>&#9;&#9;if(verbose)</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;// System.out.println(command);</span></pre></td></tr>
 
 
 <tr>
@@ -1372,11 +1370,11 @@ body{
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_91'>1</a>
 <span>
-1. writeCommand : removed call to java/io/PrintStream::println &rarr; SURVIVED<br/>
+1. writeCommand : negated conditional &rarr; SURVIVED<br/>
 
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>                {System.out.println(command);}</span></pre></td></tr>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;if(verbose)</span></pre></td></tr>
 
 
 <tr>
@@ -1388,27 +1386,25 @@ body{
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_92'>1</a>
 <span>
-1. writeCommand : removed call to java/io/BufferedWriter::write &rarr; SURVIVED<br/>
+1. writeCommand : removed call to java/io/PrintStream::println &rarr; SURVIVED<br/>
 
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>&#9;&#9;writer.write(command + &#34;\n&#34;);</span></pre></td></tr>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;&#9;System.out.println(command);</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_93'/>
 93
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_93'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_93'></a>
 <span>
-1. writeCommand : removed call to java/io/BufferedWriter::flush &rarr; SURVIVED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>&#9;&#9;writer.flush();</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -1420,6 +1416,38 @@ body{
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_94'>1</a>
 <span>
+1. writeCommand : removed call to java/io/BufferedWriter::write &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;writer.write(command + &#34;\n&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_95'/>
+95
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_95'>1</a>
+<span>
+1. writeCommand : removed call to java/io/BufferedWriter::flush &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;writer.flush();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_96'/>
+96
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_96'>1</a>
+<span>
 1. writeCommand : removed call to java/lang/Thread::sleep &rarr; SURVIVED<br/>
 
 </span>
@@ -1429,34 +1457,6 @@ body{
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_95'/>
-95
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_95'></a>
-<span>
-</span>
-</td>
-<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_96'/>
-96
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_96'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_97'/>
 97
 </td>
@@ -1466,23 +1466,21 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;public Map&#60;String, String&#62; getVars(){</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_98'/>
 98
 </td>
-<td class='killed'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_98'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_98'></a>
 <span>
-1. getVars : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/jdb/JDBHelper::getVars to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;return vars;</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -1496,21 +1494,23 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;public Map&#60;String, String&#62; getVars(){</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_100'/>
 100
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_100'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_100'>1</a>
 <span>
+1. getVars : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/jdb/JDBHelper::getVars to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return vars;</span></pre></td></tr>
 
 
 <tr>
@@ -1524,11 +1524,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private void parseVars(InputStream outputStream) throws IOException {</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_102'/>
 102
 </td>
@@ -1538,7 +1538,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;this.vars = new HashMap&#60;&#62;();</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -1552,7 +1552,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private void parseVars(InputStream outputStream) throws IOException {</span></pre></td></tr>
 
 
 <tr>
@@ -1566,7 +1566,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;String s = getOutput(outputStream);</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;this.vars = new HashMap&#60;String, String&#62;();</span></pre></td></tr>
 
 
 <tr>
@@ -1580,7 +1580,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -1594,7 +1594,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;String[] line = s.split(&#34;\n&#34;);</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;String s = getOutput(outputStream);</span></pre></td></tr>
 
 
 <tr>
@@ -1608,7 +1608,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -1616,19 +1616,17 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_108'/>
 108
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_108'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_108'></a>
 <span>
-1. parseVars : negated conditional &rarr; SURVIVED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>&#9;&#9;if(line[0].contains(Constants.METHOD_ARGUMENTS)){</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;String[] line = s.split(&#34;\n&#34;);</span></pre></td></tr>
 
 
 <tr>
-<td class='uncovered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_109'/>
 109
 </td>
@@ -1638,11 +1636,11 @@ body{
 <span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;int i = 1;</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_110'/>
 110
 </td>
@@ -1650,11 +1648,11 @@ body{
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_110'>1</a>
 <span>
-1. parseVars : negated conditional &rarr; NO_COVERAGE<br/>
+1. parseVars : negated conditional &rarr; SURVIVED<br/>
 
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;while(!line[i].contains(Constants.LOCAL_VARIABLES)){</span></pre></td></tr>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;if(line[0].contains(Constants.METHOD_ARGUMENTS)){</span></pre></td></tr>
 
 
 <tr>
@@ -1668,7 +1666,7 @@ body{
 <span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;String[] tmp = line[i].split(&#34; = &#34;);</span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;int i = 1;</span></pre></td></tr>
 
 
 <tr>
@@ -1676,17 +1674,19 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_112'/>
 112
 </td>
-<td class=''>
+<td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_112'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_112'>1</a>
 <span>
+1. parseVars : negated conditional &rarr; NO_COVERAGE<br/>
+
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;vars.put(tmp[0], tmp[1]);</span></pre></td></tr>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;while(!line[i].contains(Constants.LOCAL_VARIABLES)){</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='uncovered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_113'/>
 113
 </td>
@@ -1696,7 +1696,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;String[] tmp = line[i].split(&#34; = &#34;);</span></pre></td></tr>
 
 
 <tr>
@@ -1704,19 +1704,17 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_114'/>
 114
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_114'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_114'></a>
 <span>
-1. parseVars : Changed increment from 1 to -1 &rarr; NO_COVERAGE<br/>
-
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;&#9;i++;</span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;vars.put(tmp[0], tmp[1]);</span></pre></td></tr>
 
 
 <tr>
-<td class='uncovered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_115'/>
 115
 </td>
@@ -1726,7 +1724,7 @@ body{
 <span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -1742,11 +1740,11 @@ body{
 
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;i++;</span></pre></td></tr>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;&#9;i++;</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='uncovered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_117'/>
 117
 </td>
@@ -1756,7 +1754,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -1768,15 +1766,15 @@ body{
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_118'>1</a>
 <span>
-1. parseVars : negated conditional &rarr; NO_COVERAGE<br/>
+1. parseVars : Changed increment from 1 to -1 &rarr; NO_COVERAGE<br/>
 
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;while(!line[i].contains(Constants.MAIN)){</span></pre></td></tr>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;i++;</span></pre></td></tr>
 
 
 <tr>
-<td class='uncovered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_119'/>
 119
 </td>
@@ -1786,7 +1784,7 @@ body{
 <span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;String[] tmp = line[i].split(&#34; = &#34;);</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -1794,17 +1792,19 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_120'/>
 120
 </td>
-<td class=''>
+<td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_120'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_120'>1</a>
 <span>
+1. parseVars : negated conditional &rarr; NO_COVERAGE<br/>
+
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;vars.put(tmp[0], tmp[1]);</span></pre></td></tr>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;while(!line[i].contains(Constants.MAIN)){</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='uncovered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_121'/>
 121
 </td>
@@ -1814,7 +1814,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;String[] tmp = line[i].split(&#34; = &#34;);</span></pre></td></tr>
 
 
 <tr>
@@ -1822,9 +1822,37 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_122'/>
 122
 </td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_122'></a>
+<span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;vars.put(tmp[0], tmp[1]);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_123'/>
+123
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_123'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_124'/>
+124
+</td>
 <td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_122'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_124'>1</a>
 <span>
 1. parseVars : Changed increment from 1 to -1 &rarr; NO_COVERAGE<br/>
 
@@ -1835,34 +1863,6 @@ body{
 
 <tr>
 <td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_123'/>
-123
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_123'></a>
-<span>
-</span>
-</td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_124'/>
-124
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_124'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
-
-
-<tr>
-<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_125'/>
 125
 </td>
@@ -1872,7 +1872,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -1886,11 +1886,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_127'/>
 127
 </td>
@@ -1900,11 +1900,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private void parseDupedVars(InputStream outputStream) throws IOException{</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='uncovered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_128'/>
 128
 </td>
@@ -1914,11 +1914,11 @@ body{
 <span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;String s = getOutput(outputStream);</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
 
 
 <tr>
-<td class='uncovered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_129'/>
 129
 </td>
@@ -1928,7 +1928,7 @@ body{
 <span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;s = s.replaceAll(&#34;\n&#34;, &#34;&#34;).replaceAll(&#34;main\\[1\\]&#34;, &#34;&#34;);</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private void parseDupedVars(InputStream outputStream) throws IOException{</span></pre></td></tr>
 
 
 <tr>
@@ -1942,11 +1942,11 @@ body{
 <span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;String[] tmp = s.split(&#34; = &#34;);</span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;String s = getOutput(outputStream);</span></pre></td></tr>
 
 
 <tr>
-<td class='uncovered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_131'/>
 131
 </td>
@@ -1956,7 +1956,7 @@ body{
 <span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;vars.put(tmp[0].replaceAll(&#34; &#34; , &#34;&#34;), tmp[1]);</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -1970,7 +1970,7 @@ body{
 <span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;s = s.replaceAll(&#34;\n&#34;, &#34;&#34;).replaceAll(&#34;main\\[1\\]&#34;, &#34;&#34;);</span></pre></td></tr>
 
 
 <tr>
@@ -1984,7 +1984,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -1998,11 +1998,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private void getVarsToDump(){</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='uncovered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_135'/>
 135
 </td>
@@ -2012,23 +2012,21 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;List&#60;String&#62; list = new ArrayList&#60;&#62;();</span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;String[] tmp = s.split(&#34; = &#34;);</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_136'/>
 136
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_136'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_136'></a>
 <span>
-1. getVarsToDump : negated conditional &rarr; SURVIVED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>&#9;&#9;for(String key : vars.keySet()){</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -2036,15 +2034,13 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_137'/>
 137
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_137'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_137'></a>
 <span>
-1. getVarsToDump : negated conditional &rarr; NO_COVERAGE<br/>
-
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;if(vars.get(key).startsWith(Constants.INSTANCE_OF))</span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;vars.put(tmp[0].replaceAll(&#34; &#34; , &#34;&#34;), tmp[1]);</span></pre></td></tr>
 
 
 <tr>
@@ -2058,11 +2054,11 @@ body{
 <span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;list.add(key);</span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='uncovered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_139'/>
 139
 </td>
@@ -2072,7 +2068,7 @@ body{
 <span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -2086,7 +2082,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private void getVarsToDump(){</span></pre></td></tr>
 
 
 <tr>
@@ -2100,7 +2096,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;varsToDump = list.toArray(new String[list.size()]);</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;List&#60;String&#62; list = new ArrayList&#60;String&#62;();</span></pre></td></tr>
 
 
 <tr>
@@ -2108,31 +2104,35 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_142'/>
 142
 </td>
-<td class=''>
+<td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_142'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_142'>1</a>
 <span>
+1. getVarsToDump : negated conditional &rarr; SURVIVED<br/>
+
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;for(String key : vars.keySet()){</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='uncovered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_143'/>
 143
 </td>
-<td class=''>
+<td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_143'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_143'>1</a>
 <span>
+1. getVarsToDump : negated conditional &rarr; NO_COVERAGE<br/>
+
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;if(vars.get(key).startsWith(Constants.INSTANCE_OF))</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='uncovered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_144'/>
 144
 </td>
@@ -2142,11 +2142,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private String getOutput(InputStream outputStream) throws IOException {</span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;list.add(key);</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='uncovered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_145'/>
 145
 </td>
@@ -2156,7 +2156,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;byte[] buffer = new byte[100000];</span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -2170,7 +2170,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;int bytesRead;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -2184,7 +2184,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>                StringBuilder bld = new StringBuilder();</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;varsToDump = list.toArray(new String[list.size()]);</span></pre></td></tr>
 
 
 <tr>
@@ -2192,20 +2192,17 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_148'/>
 148
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_148'>2</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_148'></a>
 <span>
-1. getOutput : negated conditional &rarr; SURVIVED<br/>
-2. getOutput : changed conditional boundary &rarr; TIMED_OUT<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>&#9;&#9;while (outputStream.available() &#62; 0) {</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_149'/>
 149
 </td>
@@ -2215,24 +2212,21 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;bytesRead = outputStream.read(buffer);</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_150'/>
 150
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_150'>2</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_150'></a>
 <span>
-1. getOutput : changed conditional boundary &rarr; SURVIVED<br/>
-2. getOutput : negated conditional &rarr; SURVIVED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>                        if (bytesRead &#62; 0) </span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private String getOutput(InputStream outputStream) throws IOException {</span></pre></td></tr>
 
 
 <tr>
@@ -2246,7 +2240,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>                        { bld.append(new String(buffer, 0, bytesRead)).append(&#34;\n&#34;);}</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;byte[] buffer = new byte[100000];</span></pre></td></tr>
 
 
 <tr>
@@ -2260,7 +2254,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>                }</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;int bytesRead;</span></pre></td></tr>
 
 
 <tr>
@@ -2274,7 +2268,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>                String str = bld.toString();</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;String s = &#34;&#34;;</span></pre></td></tr>
 
 
 <tr>
@@ -2284,17 +2278,18 @@ body{
 </td>
 <td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_154'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_154'>2</a>
 <span>
-1. getOutput : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/jdb/JDBHelper::getOutput to ( if (x != null) null else throw new RuntimeException ) &rarr; SURVIVED<br/>
+1. getOutput : negated conditional &rarr; SURVIVED<br/>
+2. getOutput : changed conditional boundary &rarr; TIMED_OUT<br/>
 
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>&#9;&#9;return str;</span></pre></td></tr>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;while (outputStream.available() &#62; 0) {</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_155'/>
 155
 </td>
@@ -2304,17 +2299,134 @@ body{
 <span>
 </span>
 </td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;bytesRead = outputStream.read(buffer);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_156'/>
+156
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_156'>2</a>
+<span>
+1. getOutput : changed conditional boundary &rarr; SURVIVED<br/>
+2. getOutput : negated conditional &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;&#9;if (bytesRead &#62; 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_157'/>
+157
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_157'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;s += new String(buffer, 0, bytesRead) + &#34;\n&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_158'/>
+158
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_158'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_159'/>
+159
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_159'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_160'/>
+160
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_160'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_161'/>
+161
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_161'>1</a>
+<span>
+1. getOutput : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/jdb/JDBHelper::getOutput to ( if (x != null) null else throw new RuntimeException ) &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;return s;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_162'/>
+162
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_162'></a>
+<span>
+</span>
+</td>
 <td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
 <td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_156'/>
-156
+<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_163'/>
+163
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_156'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_163'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_164'/>
+164
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_164'></a>
 <span>
 </span>
 </td>
@@ -2495,23 +2607,13 @@ body{
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_90'>90</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_90'/> 
-
-<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>writeCommand<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
-</td>
-</tr>
-<tr>
 <td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_91'>91</a></td> 
 <td></td>
 <td>
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_91'/> 
 
-<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>writeCommand<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; SURVIVED</p> 
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>writeCommand<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
 </td>
 </tr>
 <tr>
@@ -2521,17 +2623,7 @@ body{
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_92'/> 
 
-<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>writeCommand<br/><b>Killed by : </b>none</span></span> removed call to java/io/BufferedWriter::write &rarr; SURVIVED</p> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_93'>93</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_93'/> 
-
-<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>writeCommand<br/><b>Killed by : </b>none</span></span> removed call to java/io/BufferedWriter::flush &rarr; SURVIVED</p> 
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>writeCommand<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; SURVIVED</p> 
 </td>
 </tr>
 <tr>
@@ -2541,27 +2633,37 @@ body{
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_94'/> 
 
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>writeCommand<br/><b>Killed by : </b>none</span></span> removed call to java/io/BufferedWriter::write &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_95'>95</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_95'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>writeCommand<br/><b>Killed by : </b>none</span></span> removed call to java/io/BufferedWriter::flush &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_96'>96</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_96'/> 
+
 <p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>writeCommand<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Thread::sleep &rarr; SURVIVED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_98'>98</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_100'>100</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_98'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_100'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getVars<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.jdb.JDBHelperTest.testGetVars(fr.univlille1.m2iagl.opl.causechaineffect.jdb.JDBHelperTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/jdb/JDBHelper::getVars to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_108'>108</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_108'/> 
-
-<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>parseVars<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
 </td>
 </tr>
 <tr>
@@ -2571,17 +2673,17 @@ body{
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_110'/> 
 
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>parseVars<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> 
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>parseVars<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_114'>114</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_112'>112</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_114'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_112'/> 
 
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>parseVars<br/><b>Killed by : </b>none</span></span> Changed increment from 1 to -1 &rarr; NO_COVERAGE</p> 
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>parseVars<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> 
 </td>
 </tr>
 <tr>
@@ -2601,57 +2703,47 @@ body{
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_118'/> 
 
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>parseVars<br/><b>Killed by : </b>none</span></span> Changed increment from 1 to -1 &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_120'>120</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_120'/> 
+
 <p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>parseVars<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_122'>122</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_124'>124</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_122'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_124'/> 
 
 <p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>parseVars<br/><b>Killed by : </b>none</span></span> Changed increment from 1 to -1 &rarr; NO_COVERAGE</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_136'>136</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_142'>142</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_136'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_142'/> 
 
 <p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getVarsToDump<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_137'>137</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_143'>143</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_137'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_143'/> 
 
 <p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getVarsToDump<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_148'>148</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_148'/> 
-
-<p class='TIMED_OUT'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getOutput<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; TIMED_OUT</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getOutput<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_150'>150</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_150'/> 
-
-<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getOutput<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getOutput<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
 </td>
 </tr>
 <tr>
@@ -2660,6 +2752,26 @@ body{
 <td>
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_154'/> 
+
+<p class='TIMED_OUT'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getOutput<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; TIMED_OUT</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getOutput<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_156'>156</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_156'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getOutput<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getOutput<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5b48f0f4_161'>161</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5b48f0f4_161'/> 
 
 <p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getOutput<br/><b>Killed by : </b>none</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/jdb/JDBHelper::getOutput to ( if (x != null) null else throw new RuntimeException ) &rarr; SURVIVED</p> 
 </td>
@@ -2682,7 +2794,7 @@ body{
 
 <h2>Tests examined</h2>
 <ul>
-<li>fr.univlille1.m2iagl.opl.causechaineffect.jdb.JDBHelperTest.testGetVars(fr.univlille1.m2iagl.opl.causechaineffect.jdb.JDBHelperTest) (0 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest) (8569 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.jdb.JDBHelperTest.testLaunchThrowsException(fr.univlille1.m2iagl.opl.causechaineffect.jdb.JDBHelperTest) (3 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.jdb.JDBHelperTest.testLaunch(fr.univlille1.m2iagl.opl.causechaineffect.jdb.JDBHelperTest) (3 ms)</li>
+<li>fr.univlille1.m2iagl.opl.causechaineffect.jdb.JDBHelperTest.testGetVars(fr.univlille1.m2iagl.opl.causechaineffect.jdb.JDBHelperTest) (0 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest) (8560 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.jdb.JDBHelperTest.testLaunchThrowsException(fr.univlille1.m2iagl.opl.causechaineffect.jdb.JDBHelperTest) (5 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.jdb.JDBHelperTest.testLaunch(fr.univlille1.m2iagl.opl.causechaineffect.jdb.JDBHelperTest) (3 ms)</li>
 </ul>
 
 <br/>

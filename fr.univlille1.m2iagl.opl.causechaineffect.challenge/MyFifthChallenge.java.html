@@ -447,7 +447,7 @@ body{
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_28'/>
 28
 </td>
@@ -457,7 +457,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;//e.printStackTrace();</span></pre></td></tr>
 
 
 <tr>
@@ -471,11 +471,11 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_30'/>
 30
 </td>
@@ -485,7 +485,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -499,7 +499,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;@Override</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -513,11 +513,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;public String doIt(String input) {</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;@Override</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_33'/>
 33
 </td>
@@ -527,7 +527,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;Map&#60;Character, Integer&#62; charCpt = new HashMap&#60;&#62;();</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;public String doIt(String input) {</span></pre></td></tr>
 
 
 <tr>
@@ -535,9 +535,23 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_34'/>
 34
 </td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_34'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;Map&#60;Character, Integer&#62; charCpt = new HashMap&#60;Character, Integer&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_35'/>
+35
+</td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_34'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_35'>1</a>
 <span>
 1. doIt : removed call to fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyFifthChallenge::initMap &rarr; KILLED<br/>
 
@@ -548,12 +562,12 @@ body{
 
 <tr>
 <td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_35'/>
-35
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_36'/>
+36
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_35'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_36'></a>
 <span>
 </span>
 </td>
@@ -562,32 +576,18 @@ body{
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_36'/>
-36
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_37'/>
+37
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_36'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_37'>1</a>
 <span>
 1. doIt : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyFifthChallenge::doIt to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
 
 </span>
 </td>
 <td class='covered'><pre><span  class='killed'>&#9;&#9;return recursif(input, charCpt);</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_37'/>
-37
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_37'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -601,7 +601,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -615,23 +615,21 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private String recursif(String input, Map&#60;Character, Integer&#62; charCpt){</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_40'/>
 40
 </td>
-<td class='killed'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_40'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_40'></a>
 <span>
-1. recursif : negated conditional &rarr; KILLED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;if((&#34;&#34;).equals(input)){</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private String recursif(String input, Map&#60;Character, Integer&#62; charCpt){</span></pre></td></tr>
 
 
 <tr>
@@ -639,9 +637,25 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_41'/>
 41
 </td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_41'>1</a>
+<span>
+1. recursif : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if(input.equals(&#34;&#34;)){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_42'/>
+42
+</td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_41'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_42'></a>
 <span>
 </span>
 </td>
@@ -650,12 +664,12 @@ body{
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_42'/>
-42
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_43'/>
+43
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_42'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_43'>1</a>
 <span>
 1. recursif : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyFifthChallenge::recursif to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
 
@@ -666,12 +680,12 @@ body{
 
 <tr>
 <td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_43'/>
-43
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_44'/>
+44
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_43'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_44'></a>
 <span>
 </span>
 </td>
@@ -680,12 +694,12 @@ body{
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_44'/>
-44
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_45'/>
+45
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_44'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_45'>1</a>
 <span>
 1. recursif : removed call to fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyFifthChallenge::treatChar &rarr; KILLED<br/>
 
@@ -696,12 +710,12 @@ body{
 
 <tr>
 <td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_45'/>
-45
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_46'/>
+46
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_45'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_46'></a>
 <span>
 </span>
 </td>
@@ -710,32 +724,18 @@ body{
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_46'/>
-46
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_47'/>
+47
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_46'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_47'>1</a>
 <span>
 1. recursif : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyFifthChallenge::recursif to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
 
 </span>
 </td>
 <td class='covered'><pre><span  class='killed'>&#9;&#9;return recursif(input.substring(1, input.length()), charCpt);</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_47'/>
-47
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_47'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -749,7 +749,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -763,23 +763,21 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private void treatChar(Map&#60;Character, Integer&#62; charCpt, char c){</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_50'/>
 50
 </td>
-<td class='killed'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_50'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_50'></a>
 <span>
-1. treatChar : negated conditional &rarr; KILLED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;if(c != &#39; &#39;)</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private void treatChar(Map&#60;Character, Integer&#62; charCpt, char c){</span></pre></td></tr>
 
 
 <tr>
@@ -791,6 +789,22 @@ body{
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_51'>1</a>
 <span>
+1. treatChar : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if(c != &#39; &#39;)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_52'/>
+52
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_52'>1</a>
+<span>
 1. treatChar : removed call to fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyFifthChallenge::incrementsCharCpt &rarr; KILLED<br/>
 
 </span>
@@ -800,20 +814,6 @@ body{
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_52'/>
-52
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_52'></a>
-<span>
-</span>
-</td>
-<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_53'/>
 53
 </td>
@@ -823,7 +823,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -837,17 +837,31 @@ body{
 <span>
 </span>
 </td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_55'></a>
+<span>
+</span>
+</td>
 <td class=''><pre><span  class=''>&#9;private void incrementsCharCpt(Map&#60;Character, Integer&#62; charCpt, char c){</span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_55'/>
-55
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_56'/>
+56
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_55'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_56'>1</a>
 <span>
 1. incrementsCharCpt : Replaced integer addition with subtraction &rarr; KILLED<br/>
 
@@ -858,20 +872,6 @@ body{
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_56'/>
-56
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_56'></a>
-<span>
-</span>
-</td>
-<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_57'/>
 57
 </td>
@@ -881,7 +881,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -895,17 +895,31 @@ body{
 <span>
 </span>
 </td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_59'></a>
+<span>
+</span>
+</td>
 <td class=''><pre><span  class=''>&#9;private void initMap(Map&#60;Character, Integer&#62; charCpt){</span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_59'/>
-59
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_60'/>
+60
 </td>
 <td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_59'>3</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_60'>3</a>
 <span>
 1. initMap : changed conditional boundary &rarr; SURVIVED<br/>
 2. initMap : Changed increment from 1 to -1 &rarr; TIMED_OUT<br/>
@@ -918,20 +932,6 @@ body{
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_60'/>
-60
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_60'></a>
-<span>
-</span>
-</td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;charCpt.put((char) i, 0);</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_61'/>
 61
 </td>
@@ -941,17 +941,31 @@ body{
 <span>
 </span>
 </td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;charCpt.put((char) i, 0);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_62'></a>
+<span>
+</span>
+</td>
 <td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_62'/>
-62
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_63'/>
+63
 </td>
 <td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_62'>3</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_63'>3</a>
 <span>
 1. initMap : changed conditional boundary &rarr; SURVIVED<br/>
 2. initMap : Changed increment from 1 to -1 &rarr; TIMED_OUT<br/>
@@ -964,20 +978,6 @@ body{
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_63'/>
-63
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_63'></a>
-<span>
-</span>
-</td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;charCpt.put((char) i, 0);</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_64'/>
 64
 </td>
@@ -987,11 +987,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;charCpt.put((char) i, 0);</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_65'/>
 65
 </td>
@@ -1001,11 +1001,11 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_66'/>
 66
 </td>
@@ -1015,7 +1015,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -1029,11 +1029,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private char getCharMostUsed(Map&#60;Character, Integer&#62; charCpt){</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_68'/>
 68
 </td>
@@ -1043,11 +1043,11 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;List&#60;Character&#62; keyList = new ArrayList&#60;&#62;(charCpt.keySet());</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private char getCharMostUsed(Map&#60;Character, Integer&#62; charCpt){</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_69'/>
 69
 </td>
@@ -1057,11 +1057,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;List&#60;Character&#62; keyList = new ArrayList&#60;Character&#62;(charCpt.keySet());</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_70'/>
 70
 </td>
@@ -1071,7 +1071,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;char c = keyList.get(0);</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -1085,11 +1085,11 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;int value = charCpt.get(c);</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;char c = keyList.get(0);</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_72'/>
 72
 </td>
@@ -1099,17 +1099,31 @@ body{
 <span>
 </span>
 </td>
+<td class='covered'><pre><span  class=''>&#9;&#9;int value = charCpt.get(c);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_73'></a>
+<span>
+</span>
+</td>
 <td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_73'/>
-73
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_74'/>
+74
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_73'>3</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_74'>3</a>
 <span>
 1. getCharMostUsed : changed conditional boundary &rarr; KILLED<br/>
 2. getCharMostUsed : Changed increment from 1 to -1 &rarr; KILLED<br/>
@@ -1118,20 +1132,6 @@ body{
 </span>
 </td>
 <td class='covered'><pre><span  class='killed'>&#9;&#9;for(int i=1;i&#60;keyList.size();i++){</span></pre></td></tr>
-
-
-<tr>
-<td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_74'/>
-74
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_74'></a>
-<span>
-</span>
-</td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;char cTmp = keyList.get(i);</span></pre></td></tr>
 
 
 <tr>
@@ -1145,7 +1145,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;int valueTmp = charCpt.get(cTmp);</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;char cTmp = keyList.get(i);</span></pre></td></tr>
 
 
 <tr>
@@ -1153,16 +1153,13 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_76'/>
 76
 </td>
-<td class='killed'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_76'>2</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_76'></a>
 <span>
-1. getCharMostUsed : changed conditional boundary &rarr; KILLED<br/>
-2. getCharMostUsed : negated conditional &rarr; KILLED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;if(valueTmp &#62; value){</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;int valueTmp = charCpt.get(cTmp);</span></pre></td></tr>
 
 
 <tr>
@@ -1170,13 +1167,16 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_77'/>
 77
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_77'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_77'>2</a>
 <span>
+1. getCharMostUsed : changed conditional boundary &rarr; KILLED<br/>
+2. getCharMostUsed : negated conditional &rarr; KILLED<br/>
+
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;c = cTmp;</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;if(valueTmp &#62; value){</span></pre></td></tr>
 
 
 <tr>
@@ -1190,11 +1190,11 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;value = valueTmp;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;c = cTmp;</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_79'/>
 79
 </td>
@@ -1204,7 +1204,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;value = valueTmp;</span></pre></td></tr>
 
 
 <tr>
@@ -1218,7 +1218,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -1232,37 +1232,37 @@ body{
 <span>
 </span>
 </td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_82'/>
+82
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_82'></a>
+<span>
+</span>
+</td>
 <td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_82'/>
-82
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_83'/>
+83
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_82'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_83'>1</a>
 <span>
 1. getCharMostUsed : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED<br/>
 
 </span>
 </td>
 <td class='covered'><pre><span  class='killed'>&#9;&#9;return c;</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_83'/>
-83
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_83'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -1276,7 +1276,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -1290,7 +1290,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -1304,7 +1304,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -1346,6 +1346,20 @@ body{
 <span>
 </span>
 </td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@226d5af0_90'/>
+90
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_90'></a>
+<span>
+</span>
+</td>
 <td class=''><pre><span  class=''>}</span></pre></td></tr>
 
 
@@ -1383,73 +1397,63 @@ body{
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_34'>34</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_35'>35</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_34'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_35'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>doIt<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> removed call to fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyFifthChallenge::initMap &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_36'>36</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_37'>37</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_36'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_37'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>doIt<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyFifthChallenge::doIt to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_40'>40</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_41'>41</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_40'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_41'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>recursif<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> negated conditional &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_42'>42</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_43'>43</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_42'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_43'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>recursif<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyFifthChallenge::recursif to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_44'>44</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_45'>45</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_44'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_45'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>recursif<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> removed call to fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyFifthChallenge::treatChar &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_46'>46</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_47'>47</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_46'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_47'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>recursif<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyFifthChallenge::recursif to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_50'>50</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_50'/> 
-
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>treatChar<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> negated conditional &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
@@ -1459,65 +1463,75 @@ body{
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_51'/> 
 
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>treatChar<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_52'>52</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_52'/> 
+
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>treatChar<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> removed call to fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyFifthChallenge::incrementsCharCpt &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_55'>55</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_56'>56</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_55'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_56'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>incrementsCharCpt<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_59'>59</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_60'>60</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_59'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_60'/> 
 
 <p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>initMap<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='TIMED_OUT'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>initMap<br/><b>Killed by : </b>none</span></span> Changed increment from 1 to -1 &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>initMap<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> negated conditional &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_62'>62</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_63'>63</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_62'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_63'/> 
 
 <p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>initMap<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='TIMED_OUT'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>initMap<br/><b>Killed by : </b>none</span></span> Changed increment from 1 to -1 &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>initMap<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoItNull(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> negated conditional &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_73'>73</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_74'>74</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_73'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_74'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getCharMostUsed<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getCharMostUsed<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>getCharMostUsed<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> negated conditional &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_76'>76</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_77'>77</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_76'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_77'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getCharMostUsed<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getCharMostUsed<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> negated conditional &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_82'>82</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@226d5af0_83'>83</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_82'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@226d5af0_83'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getCharMostUsed<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest)</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED</p> 
 </td>
@@ -1540,7 +1554,7 @@ body{
 
 <h2>Tests examined</h2>
 <ul>
-<li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testGetInputFormat(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoItNull(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testChallenge(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest) (7 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testChallengeException(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testGetInputs(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest) (1 ms)</li>
+<li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testGetInputFormat(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoItNull(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testChallenge(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest) (8 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testChallengeException(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest) (2 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest.testGetInputs(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFifthChallengeTest) (1 ms)</li>
 </ul>
 
 <br/>
