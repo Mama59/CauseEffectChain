@@ -297,7 +297,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private int rightInputIndex, wrongInputIndex;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private int rightInputIndex;</span></pre></td></tr>
 
 
 <tr>
@@ -311,7 +311,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private BreakpointArray breakpointArray;</span></pre></td></tr>
+<td class=''><pre><span  class=''>        private int wrongInputIndex;</span></pre></td></tr>
 
 
 <tr>
@@ -325,7 +325,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private String exceptionType;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private BreakpointArray breakpointArray;</span></pre></td></tr>
 
 
 <tr>
@@ -339,7 +339,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private String exceptionType;</span></pre></td></tr>
 
 
 <tr>
@@ -353,7 +353,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private boolean verbose, allVars;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -367,11 +367,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private boolean verbose;</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_23'/>
 23
 </td>
@@ -381,11 +381,11 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;public MyDDebugger(boolean verbose, boolean allVars){</span></pre></td></tr>
+<td class=''><pre><span  class=''>        private boolean allVars;</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_24'/>
 24
 </td>
@@ -395,7 +395,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;this.verbose = verbose;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -409,7 +409,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;this.allVars = allVars;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;public MyDDebugger(boolean verbose, boolean allVars){</span></pre></td></tr>
 
 
 <tr>
@@ -423,11 +423,11 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;this.verbose = verbose;</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_27'/>
 27
 </td>
@@ -437,11 +437,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;this.allVars = allVars;</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_28'/>
 28
 </td>
@@ -451,7 +451,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -465,23 +465,21 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;public &#60;I&#62; CauseEffectChain debug(Challenge&#60;I&#62; challenge) {</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_30'/>
 30
 </td>
-<td class='killed'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_30'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_30'></a>
 <span>
-1. debug : removed call to fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::computeRightAndWrongInput &rarr; KILLED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;computeRightAndWrongInput(challenge);</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -495,17 +493,61 @@ body{
 <span>
 </span>
 </td>
+<td class=''><pre><span  class=''>        @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_32'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public &#60;I&#62; CauseEffectChain debug(Challenge&#60;I&#62; challenge) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_33'/>
+33
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_33'>1</a>
+<span>
+1. debug : removed call to fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::computeRightAndWrongInput &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;computeRightAndWrongInput(challenge);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_34'></a>
+<span>
+</span>
+</td>
 <td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_32'/>
-32
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_35'/>
+35
 </td>
 <td class='uncertain'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_32'>2</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_35'>2</a>
 <span>
 1. debug : negated conditional &rarr; RUN_ERROR<br/>
 2. debug : negated conditional &rarr; RUN_ERROR<br/>
@@ -517,12 +559,12 @@ body{
 
 <tr>
 <td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_33'/>
-33
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_36'/>
+36
 </td>
 <td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_33'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_36'>1</a>
 <span>
 1. debug : removed call to java/io/PrintStream::println &rarr; NO_COVERAGE<br/>
 
@@ -533,60 +575,18 @@ body{
 
 <tr>
 <td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_34'/>
-34
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_37'/>
+37
 </td>
 <td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_34'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_37'>1</a>
 <span>
 1. debug : removed call to java/lang/System::exit &rarr; NO_COVERAGE<br/>
 
 </span>
 </td>
 <td class='uncovered'><pre><span  class='survived'>&#9;&#9;&#9;System.exit(1);</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_35'/>
-35
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_35'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_36'/>
-36
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_36'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_37'/>
-37
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_37'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -600,23 +600,21 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_39'/>
 39
 </td>
-<td class='killed'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_39'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_39'></a>
 <span>
-1. debug : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::debug to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;return internalDebug(challenge, rightInputIndex, wrongInputIndex, breakpointArray);</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -630,7 +628,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -648,21 +646,23 @@ body{
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_42'/>
 42
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_42'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_42'>1</a>
 <span>
+1. debug : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::debug to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private &#60;I&#62; void computeRightAndWrongInput(Challenge&#60;I&#62; challenge){</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return internalDebug(rightInputIndex, wrongInputIndex, breakpointArray);</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_43'/>
 43
 </td>
@@ -672,11 +672,11 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;rightInputIndex = -1;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_44'/>
 44
 </td>
@@ -686,7 +686,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;wrongInputIndex = -1;</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -700,7 +700,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private &#60;I&#62; void computeRightAndWrongInput(Challenge&#60;I&#62; challenge){</span></pre></td></tr>
 
 
 <tr>
@@ -708,17 +708,13 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_46'/>
 46
 </td>
-<td class='uncertain'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_46'>3</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_46'></a>
 <span>
-1. computeRightAndWrongInput : negated conditional &rarr; RUN_ERROR<br/>
-2. computeRightAndWrongInput : changed conditional boundary &rarr; KILLED<br/>
-3. computeRightAndWrongInput : Changed increment from 1 to -1 &rarr; KILLED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='uncertain'>&#9;&#9;for(int i=0;i&#60;challenge.getInputs().size();i++){</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;rightInputIndex = -1;</span></pre></td></tr>
 
 
 <tr>
@@ -732,7 +728,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;I input = challenge.getInputs().get(i);</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;wrongInputIndex = -1;</span></pre></td></tr>
 
 
 <tr>
@@ -754,13 +750,17 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_49'/>
 49
 </td>
-<td class=''>
+<td class='uncertain'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_49'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_49'>3</a>
 <span>
+1. computeRightAndWrongInput : negated conditional &rarr; RUN_ERROR<br/>
+2. computeRightAndWrongInput : changed conditional boundary &rarr; KILLED<br/>
+3. computeRightAndWrongInput : Changed increment from 1 to -1 &rarr; KILLED<br/>
+
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;BreakpointArray tmpBreakpointArray = getCauseEffectChain(challenge, input);</span></pre></td></tr>
+<td class='covered'><pre><span  class='uncertain'>&#9;&#9;for(int i=0;i&#60;challenge.getInputs().size();i++){</span></pre></td></tr>
 
 
 <tr>
@@ -768,20 +768,17 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_50'/>
 50
 </td>
-<td class='uncertain'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_50'>2</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_50'></a>
 <span>
-1. computeRightAndWrongInput : negated conditional &rarr; RUN_ERROR<br/>
-2. computeRightAndWrongInput : negated conditional &rarr; RUN_ERROR<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='uncertain'>&#9;&#9;&#9;if(tmpBreakpointArray != null &#38;&#38; breakpointArray == null){</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;I input = challenge.getInputs().get(i);</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_51'/>
 51
 </td>
@@ -791,7 +788,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;breakpointArray = tmpBreakpointArray;</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -805,7 +802,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;wrongInputIndex = i;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;BreakpointArray tmpBreakpointArray = getCauseEffectChain(challenge, input);</span></pre></td></tr>
 
 
 <tr>
@@ -822,7 +819,7 @@ body{
 
 </span>
 </td>
-<td class='covered'><pre><span  class='uncertain'>&#9;&#9;&#9;} else if(tmpBreakpointArray == null &#38;&#38; rightInputIndex == -1){</span></pre></td></tr>
+<td class='covered'><pre><span  class='uncertain'>&#9;&#9;&#9;if(tmpBreakpointArray != null &#38;&#38; breakpointArray == null){</span></pre></td></tr>
 
 
 <tr>
@@ -836,11 +833,11 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;rightInputIndex = i;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;breakpointArray = tmpBreakpointArray;</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_55'/>
 55
 </td>
@@ -850,25 +847,28 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;wrongInputIndex = i;</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_56'/>
 56
 </td>
-<td class=''>
+<td class='uncertain'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_56'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_56'>2</a>
 <span>
+1. computeRightAndWrongInput : negated conditional &rarr; RUN_ERROR<br/>
+2. computeRightAndWrongInput : negated conditional &rarr; RUN_ERROR<br/>
+
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class='uncertain'>&#9;&#9;&#9;} else if(tmpBreakpointArray == null &#38;&#38; rightInputIndex == -1){</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_57'/>
 57
 </td>
@@ -878,11 +878,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;rightInputIndex = i;</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_58'/>
 58
 </td>
@@ -892,7 +892,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -906,7 +906,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -920,11 +920,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private &#60;I&#62; CauseEffectChain internalDebug(Challenge&#60;I&#62; challenge, int rightInputIndex, int wrongInputIndex, BreakpointArray breakpointArray) {</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_61'/>
 61
 </td>
@@ -934,7 +934,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -948,11 +948,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;// On lance les 2 programmes pour chaque &#233;l&#233;ment de la chaine de cause &#224; effet pour faire la diff&#233;rence entre toutes les variables locales</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_63'/>
 63
 </td>
@@ -962,7 +962,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;CauseEffectChain causeEffectChain = new CauseEffectChain(breakpointArray, exceptionType);</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private &#60;I&#62; CauseEffectChain internalDebug(int rightInputIndex, int wrongInputIndex, BreakpointArray breakpointArray) {</span></pre></td></tr>
 
 
 <tr>
@@ -980,7 +980,7 @@ body{
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_65'/>
 65
 </td>
@@ -990,7 +990,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;int cpt=0;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;// On lance les 2 programmes pour chaque &#233;l&#233;ment de la chaine de cause &#224; effet pour faire la diff&#233;rence entre toutes les variables locales</span></pre></td></tr>
 
 
 <tr>
@@ -998,33 +998,27 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_66'/>
 66
 </td>
-<td class='killed'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_66'>3</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_66'></a>
 <span>
-1. internalDebug : changed conditional boundary &rarr; KILLED<br/>
-2. internalDebug : Changed increment from 1 to -1 &rarr; KILLED<br/>
-3. internalDebug : negated conditional &rarr; KILLED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;for(int i=0;i&#60;breakpointArray.length();i++){</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;CauseEffectChain causeEffectChain = new CauseEffectChain(breakpointArray, exceptionType);</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_67'/>
 67
 </td>
-<td class='killed'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_67'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_67'></a>
 <span>
-1. internalDebug : negated conditional &rarr; KILLED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;if(breakpointArray.get(i).getLine() != 1){</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -1038,7 +1032,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;Map&#60;String, String&#62; rightVars = getVarsAtBreakpoint(challenge, rightInputIndex, breakpointArray.get(i));</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;int cpt=0;</span></pre></td></tr>
 
 
 <tr>
@@ -1046,31 +1040,37 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_69'/>
 69
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_69'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_69'>3</a>
 <span>
+1. internalDebug : changed conditional boundary &rarr; KILLED<br/>
+2. internalDebug : Changed increment from 1 to -1 &rarr; KILLED<br/>
+3. internalDebug : negated conditional &rarr; KILLED<br/>
+
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;Map&#60;String, String&#62; wrongVars = getVarsAtBreakpoint(challenge, wrongInputIndex, breakpointArray.get(i));</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;for(int i=0;i&#60;breakpointArray.length();i++){</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_70'/>
 70
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_70'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_70'>1</a>
 <span>
+1. internalDebug : negated conditional &rarr; KILLED<br/>
+
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;if(breakpointArray.get(i).getLine() != 1){</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_71'/>
 71
 </td>
@@ -1080,7 +1080,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;List&#60;String&#62; keys;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;Map&#60;String, String&#62; rightVars = getVarsAtBreakpoint(rightInputIndex, breakpointArray.get(i));</span></pre></td></tr>
 
 
 <tr>
@@ -1088,20 +1088,17 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_72'/>
 72
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_72'>2</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_72'></a>
 <span>
-1. internalDebug : negated conditional &rarr; SURVIVED<br/>
-2. internalDebug : negated conditional &rarr; SURVIVED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>&#9;&#9;&#9;&#9;if(rightVars == null || allVars)</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;Map&#60;String, String&#62; wrongVars = getVarsAtBreakpoint(wrongInputIndex, breakpointArray.get(i));</span></pre></td></tr>
 
 
 <tr>
-<td class='uncovered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_73'/>
 73
 </td>
@@ -1111,7 +1108,7 @@ body{
 <span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;&#9;keys = new ArrayList&#60;String&#62;(wrongVars.keySet());</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -1125,7 +1122,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;else</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;List&#60;String&#62; keys;</span></pre></td></tr>
 
 
 <tr>
@@ -1133,17 +1130,20 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_75'/>
 75
 </td>
-<td class=''>
+<td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_75'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_75'>2</a>
 <span>
+1. internalDebug : negated conditional &rarr; SURVIVED<br/>
+2. internalDebug : negated conditional &rarr; SURVIVED<br/>
+
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;&#9;keys = Helper.getKeysWithDifferentValues(rightVars, wrongVars);</span></pre></td></tr>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;&#9;&#9;if(rightVars == null || allVars)</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='uncovered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_76'/>
 76
 </td>
@@ -1153,7 +1153,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;&#9;&#9;&#9;keys = new ArrayList&#60;&#62;(wrongVars.keySet());</span></pre></td></tr>
 
 
 <tr>
@@ -1167,7 +1167,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;else</span></pre></td></tr>
 
 
 <tr>
@@ -1175,31 +1175,27 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_78'/>
 78
 </td>
-<td class='killed'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_78'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_78'></a>
 <span>
-1. internalDebug : removed call to fr/univlille1/m2iagl/opl/causechaineffect/model/CauseEffectChain::addEntries &rarr; KILLED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;causeEffectChain.addEntries(cpt, keys, rightVars, wrongVars);</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;&#9;keys = Helper.getKeysWithDifferentValues(rightVars, wrongVars);</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_79'/>
 79
 </td>
-<td class='killed'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_79'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_79'></a>
 <span>
-1. internalDebug : Changed increment from 1 to -1 &rarr; KILLED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;cpt++;</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -1213,35 +1209,39 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_81'/>
 81
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_81'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_81'>1</a>
 <span>
+1. internalDebug : removed call to fr/univlille1/m2iagl/opl/causechaineffect/model/CauseEffectChain::addEntries &rarr; KILLED<br/>
+
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;//System.exit(1);</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;causeEffectChain.addEntries(cpt, keys, rightVars, wrongVars);</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_82'/>
 82
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_82'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_82'>1</a>
 <span>
+1. internalDebug : Changed increment from 1 to -1 &rarr; KILLED<br/>
+
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;cpt++;</span></pre></td></tr>
 
 
 <tr>
@@ -1255,17 +1255,45 @@ body{
 <span>
 </span>
 </td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_84'/>
+84
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_84'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_85'/>
+85
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_85'></a>
+<span>
+</span>
+</td>
 <td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_84'/>
-84
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_86'/>
+86
 </td>
 <td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_84'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_86'>1</a>
 <span>
 1. internalDebug : negated conditional &rarr; SURVIVED<br/>
 
@@ -1276,62 +1304,34 @@ body{
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_85'/>
-85
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_87'/>
+87
 </td>
 <td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_85'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_87'>1</a>
 <span>
 1. internalDebug : removed call to java/io/PrintStream::println &rarr; SURVIVED<br/>
 
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>&#9;&#9;&#9;System.out.println(&#34;*************************************************&#34;);</span></pre></td></tr>
+<td class='covered'><pre><span  class='survived'>                {System.out.println(&#34;*************************************************&#34;);}</span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_86'/>
-86
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_88'/>
+88
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_86'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_88'>1</a>
 <span>
 1. internalDebug : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::internalDebug to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
 
 </span>
 </td>
 <td class='covered'><pre><span  class='killed'>&#9;&#9;return causeEffectChain;</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_87'/>
-87
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_87'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_88'/>
-88
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_88'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -1345,7 +1345,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private &#60;I&#62; Map&#60;String, String&#62; getVarsAtBreakpoint(Challenge&#60;I&#62; challenge, int index, Breakpoint breakpoint){</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -1363,7 +1363,7 @@ body{
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_91'/>
 91
 </td>
@@ -1373,27 +1373,25 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;JDBHelper jdbHelper = new JDBHelper(verbose, Constants.JDB_MAIN, breakpoint, index);</span></pre></td></tr>
-
-
-<tr>
-<td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_92'/>
-92
-</td>
-<td class='killed'>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_92'>1</a>
-<span>
-1. getVarsAtBreakpoint : removed call to fr/univlille1/m2iagl/opl/causechaineffect/jdb/JDBHelper::launch &rarr; KILLED<br/>
-
-</span>
-</td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;jdbHelper.launch();</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private &#60;I&#62; Map&#60;String, String&#62; getVarsAtBreakpoint(int index, Breakpoint breakpoint){</span></pre></td></tr>
 
 
 <tr>
 <td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_92'/>
+92
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_92'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_93'/>
 93
 </td>
@@ -1403,7 +1401,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;JDBHelper jdbHelper = new JDBHelper(verbose, Constants.JDB_MAIN, breakpoint, index);</span></pre></td></tr>
 
 
 <tr>
@@ -1415,11 +1413,11 @@ body{
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_94'>1</a>
 <span>
-1. getVarsAtBreakpoint : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::getVarsAtBreakpoint to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+1. getVarsAtBreakpoint : removed call to fr/univlille1/m2iagl/opl/causechaineffect/jdb/JDBHelper::launch &rarr; KILLED<br/>
 
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;return jdbHelper.getVars();</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;jdbHelper.launch();</span></pre></td></tr>
 
 
 <tr>
@@ -1433,21 +1431,23 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_96'/>
 96
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_96'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_96'>1</a>
 <span>
+1. getVarsAtBreakpoint : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::getVarsAtBreakpoint to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return jdbHelper.getVars();</span></pre></td></tr>
 
 
 <tr>
@@ -1461,7 +1461,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;// Return the BreakpointArray corresponding if the challenge crashed with this input</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -1475,7 +1475,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;// Return null otherwise</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -1489,7 +1489,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private &#60;I&#62; BreakpointArray getCauseEffectChain(Challenge&#60;I&#62; challenge, I input){</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;// Return the BreakpointArray corresponding if the challenge crashed with this input</span></pre></td></tr>
 
 
 <tr>
@@ -1503,11 +1503,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;try {</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;// Return null otherwise</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_101'/>
 101
 </td>
@@ -1517,23 +1517,21 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;challenge.doIt(input);</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private &#60;I&#62; BreakpointArray getCauseEffectChain(Challenge&#60;I&#62; challenge, I input){</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_102'/>
 102
 </td>
-<td class='killed'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_102'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_102'></a>
 <span>
-1. getCauseEffectChain : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::getCauseEffectChain to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;return null;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;try {</span></pre></td></tr>
 
 
 <tr>
@@ -1547,7 +1545,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;} catch(Exception e){</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;challenge.doIt(input);</span></pre></td></tr>
 
 
 <tr>
@@ -1555,17 +1553,19 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_104'/>
 104
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_104'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_104'>1</a>
 <span>
+1. getCauseEffectChain : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::getCauseEffectChain to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;RecursiveHelper recursiveHelper = new RecursiveHelper();</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;return null;</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_105'/>
 105
 </td>
@@ -1575,11 +1575,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;} catch(Exception e){</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_106'/>
 106
 </td>
@@ -1589,11 +1589,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;// Dans le catch, sauvegarde de la pile d&#39;ex&#233;cution</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;RecursiveHelper recursiveHelper = new RecursiveHelper();</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_107'/>
 107
 </td>
@@ -1603,11 +1603,11 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;StackTraceElement[] array =  e.getStackTrace();</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_108'/>
 108
 </td>
@@ -1617,11 +1617,11 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;exceptionType = e.getClass().toString() + &#34; &#34; + e.getMessage();</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;// Dans le catch, sauvegarde de la pile d&#39;ex&#233;cution</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_109'/>
 109
 </td>
@@ -1631,7 +1631,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;StackTraceElement[] array =  e.getStackTrace();</span></pre></td></tr>
 
 
 <tr>
@@ -1645,26 +1645,21 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;List&#60;Breakpoint&#62; breakpoints = new ArrayList&#60;Breakpoint&#62;();</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;exceptionType = e.getClass().toString() + &#34; &#34; + e.getMessage();</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_111'/>
 111
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_111'>4</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_111'></a>
 <span>
-1. getCauseEffectChain : changed conditional boundary &rarr; SURVIVED<br/>
-2. getCauseEffectChain : Changed increment from -1 to 1 &rarr; KILLED<br/>
-3. getCauseEffectChain : Replaced integer subtraction with addition &rarr; KILLED<br/>
-4. getCauseEffectChain : negated conditional &rarr; KILLED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>&#9;&#9;&#9;for(int i=array.length-1;i&#62;=0;i--){</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -1678,7 +1673,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;StackTraceElement stackTraceElement = array[i];</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;List&#60;Breakpoint&#62; breakpoints = new ArrayList&#60;&#62;();</span></pre></td></tr>
 
 
 <tr>
@@ -1686,13 +1681,18 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_113'/>
 113
 </td>
-<td class=''>
+<td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_113'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_113'>4</a>
 <span>
+1. getCauseEffectChain : changed conditional boundary &rarr; SURVIVED<br/>
+2. getCauseEffectChain : Changed increment from -1 to 1 &rarr; KILLED<br/>
+3. getCauseEffectChain : Replaced integer subtraction with addition &rarr; KILLED<br/>
+4. getCauseEffectChain : negated conditional &rarr; KILLED<br/>
+
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;String className = stackTraceElement.getClassName();</span></pre></td></tr>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;&#9;for(int i=array.length-1;i&#62;=0;i--){</span></pre></td></tr>
 
 
 <tr>
@@ -1706,7 +1706,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;String methodName = stackTraceElement.getMethodName();</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;StackTraceElement stackTraceElement = array[i];</span></pre></td></tr>
 
 
 <tr>
@@ -1720,11 +1720,11 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;int lineNb = stackTraceElement.getLineNumber();</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;String className = stackTraceElement.getClassName();</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_116'/>
 116
 </td>
@@ -1734,7 +1734,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;String methodName = stackTraceElement.getMethodName();</span></pre></td></tr>
 
 
 <tr>
@@ -1742,9 +1742,37 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_117'/>
 117
 </td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_117'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;int lineNb = stackTraceElement.getLineNumber();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_118'/>
+118
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_118'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_119'/>
+119
+</td>
 <td class='uncertain'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_117'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_119'>1</a>
 <span>
 1. getCauseEffectChain : negated conditional &rarr; TIMED_OUT<br/>
 
@@ -1755,12 +1783,12 @@ body{
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_118'/>
-118
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_120'/>
+120
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_118'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_120'>1</a>
 <span>
 1. getCauseEffectChain : negated conditional &rarr; KILLED<br/>
 
@@ -1771,12 +1799,12 @@ body{
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_119'/>
-119
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_121'/>
+121
 </td>
 <td class='uncertain'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_119'>2</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_121'>2</a>
 <span>
 1. getCauseEffectChain : negated conditional &rarr; TIMED_OUT<br/>
 2. getCauseEffectChain : negated conditional &rarr; KILLED<br/>
@@ -1784,34 +1812,6 @@ body{
 </span>
 </td>
 <td class='covered'><pre><span  class='uncertain'>&#9;&#9;&#9;&#9;&#9;&#9;!className.startsWith(Constants.PACKAGE_DEBUGGER) &#38;&#38;</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_120'/>
-120
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_120'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;&#9;&#9;lineNb != 1){</span></pre></td></tr>
-
-
-<tr>
-<td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_121'/>
-121
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_121'></a>
-<span>
-</span>
-</td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;&#9;breakpoints.add(new Breakpoint(array[i].getLineNumber(), className, recursiveHelper.get(className + &#34;:&#34; + methodName)));</span></pre></td></tr>
 
 
 <tr>
@@ -1825,11 +1825,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;&#9;&#9;lineNb != 1){</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_123'/>
 123
 </td>
@@ -1839,7 +1839,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;&#9;breakpoints.add(new Breakpoint(array[i].getLineNumber(), className, recursiveHelper.get(className + &#34;:&#34; + methodName)));</span></pre></td></tr>
 
 
 <tr>
@@ -1853,23 +1853,21 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_125'/>
 125
 </td>
-<td class='uncertain'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_125'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_125'></a>
 <span>
-1. getCauseEffectChain : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::getCauseEffectChain to ( if (x != null) null else throw new RuntimeException ) &rarr; RUN_ERROR<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='uncertain'>&#9;&#9;&#9;return new BreakpointArray((Breakpoint[]) breakpoints.toArray(new Breakpoint[breakpoints.size()]));&#9;&#9;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -1883,21 +1881,23 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_127'/>
 127
 </td>
-<td class=''>
+<td class='uncertain'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_127'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_127'>1</a>
 <span>
+1. getCauseEffectChain : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::getCauseEffectChain to ( if (x != null) null else throw new RuntimeException ) &rarr; RUN_ERROR<br/>
+
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class='uncertain'>&#9;&#9;&#9;return new BreakpointArray((Breakpoint[]) breakpoints.toArray(new Breakpoint[breakpoints.size()]));&#9;&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -1911,6 +1911,34 @@ body{
 <span>
 </span>
 </td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_129'/>
+129
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_129'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@37d3e140_130'/>
+130
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_130'></a>
+<span>
+</span>
+</td>
 <td class=''><pre><span  class=''>}</span></pre></td></tr>
 
 
@@ -1918,73 +1946,63 @@ body{
 <tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
 
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_30'>30</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_30'/> 
-
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>debug<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> removed call to fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::computeRightAndWrongInput &rarr; KILLED</p> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_32'>32</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_32'/> 
-
-<p class='RUN_ERROR'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>debug<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; RUN_ERROR</p> <p class='RUN_ERROR'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>debug<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; RUN_ERROR</p> 
-</td>
-</tr>
-<tr>
 <td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_33'>33</a></td> 
 <td></td>
 <td>
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_33'/> 
 
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>debug<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> removed call to fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::computeRightAndWrongInput &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_35'>35</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_35'/> 
+
+<p class='RUN_ERROR'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>debug<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; RUN_ERROR</p> <p class='RUN_ERROR'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>debug<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; RUN_ERROR</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_36'>36</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_36'/> 
+
 <p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>debug<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; NO_COVERAGE</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_34'>34</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_37'>37</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_34'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_37'/> 
 
 <p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>debug<br/><b>Killed by : </b>none</span></span> removed call to java/lang/System::exit &rarr; NO_COVERAGE</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_39'>39</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_42'>42</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_39'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_42'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>debug<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::debug to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_46'>46</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_49'>49</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_46'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_49'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>computeRightAndWrongInput<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>computeRightAndWrongInput<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='RUN_ERROR'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>computeRightAndWrongInput<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; RUN_ERROR</p> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_50'>50</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_50'/> 
-
-<p class='RUN_ERROR'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>computeRightAndWrongInput<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; RUN_ERROR</p> <p class='RUN_ERROR'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>computeRightAndWrongInput<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; RUN_ERROR</p> 
 </td>
 </tr>
 <tr>
@@ -1998,73 +2016,63 @@ body{
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_66'>66</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_56'>56</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_66'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_56'/> 
+
+<p class='RUN_ERROR'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>computeRightAndWrongInput<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; RUN_ERROR</p> <p class='RUN_ERROR'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>computeRightAndWrongInput<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; RUN_ERROR</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_69'>69</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_69'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>internalDebug<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>internalDebug<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>internalDebug<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> negated conditional &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_67'>67</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_70'>70</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_67'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_70'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>internalDebug<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> negated conditional &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_72'>72</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_75'>75</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_72'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_75'/> 
 
 <p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>internalDebug<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>internalDebug<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_78'>78</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_81'>81</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_78'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_81'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>internalDebug<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> removed call to fr/univlille1/m2iagl/opl/causechaineffect/model/CauseEffectChain::addEntries &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_79'>79</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_82'>82</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_79'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_82'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>internalDebug<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_84'>84</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_84'/> 
-
-<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>internalDebug<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_85'>85</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_85'/> 
-
-<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>internalDebug<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; SURVIVED</p> 
 </td>
 </tr>
 <tr>
@@ -2074,17 +2082,27 @@ body{
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_86'/> 
 
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>internalDebug<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::internalDebug to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>internalDebug<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_92'>92</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_87'>87</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_92'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_87'/> 
 
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getVarsAtBreakpoint<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> removed call to fr/univlille1/m2iagl/opl/causechaineffect/jdb/JDBHelper::launch &rarr; KILLED</p> 
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>internalDebug<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_88'>88</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_88'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>internalDebug<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::internalDebug to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
@@ -2094,47 +2112,37 @@ body{
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_94'/> 
 
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getVarsAtBreakpoint<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> removed call to fr/univlille1/m2iagl/opl/causechaineffect/jdb/JDBHelper::launch &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_96'>96</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_96'/> 
+
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getVarsAtBreakpoint<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::getVarsAtBreakpoint to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_102'>102</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_104'>104</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_102'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_104'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getCauseEffectChain<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::getCauseEffectChain to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_111'>111</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_113'>113</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_111'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_113'/> 
 
 <p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getCauseEffectChain<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getCauseEffectChain<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> Changed increment from -1 to 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>getCauseEffectChain<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>getCauseEffectChain<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> negated conditional &rarr; KILLED</p> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_117'>117</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_117'/> 
-
-<p class='TIMED_OUT'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getCauseEffectChain<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; TIMED_OUT</p> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_118'>118</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_118'/> 
-
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getCauseEffectChain<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> negated conditional &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
@@ -2144,15 +2152,35 @@ body{
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_119'/> 
 
+<p class='TIMED_OUT'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getCauseEffectChain<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; TIMED_OUT</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_120'>120</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_120'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getCauseEffectChain<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_121'>121</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_121'/> 
+
 <p class='TIMED_OUT'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getCauseEffectChain<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getCauseEffectChain<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest)</span></span> negated conditional &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_125'>125</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@37d3e140_127'>127</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_125'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@37d3e140_127'/> 
 
 <p class='RUN_ERROR'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getCauseEffectChain<br/><b>Killed by : </b>none</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/action/ddebugger/MyDDebugger::getCauseEffectChain to ( if (x != null) null else throw new RuntimeException ) &rarr; RUN_ERROR</p> 
 </td>
@@ -2175,7 +2203,7 @@ body{
 
 <h2>Tests examined</h2>
 <ul>
-<li>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest) (8560 ms)</li>
+<li>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest) (8575 ms)</li>
 </ul>
 
 <br/>

@@ -201,7 +201,7 @@ body{
 
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;return (Class&#60;? extends String&#62;) String.class;</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return String.class;</span></pre></td></tr>
 
 
 <tr>
@@ -533,7 +533,7 @@ body{
 
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>&#9;&#9;if(A(length) &#38;&#38; (B(c) || C(d))){</span></pre></td></tr>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;if(lenghtSuperiorToTwo(length) &#38;&#38; (charEqualE(c) || runTime(d))){</span></pre></td></tr>
 
 
 <tr>
@@ -635,7 +635,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private boolean A(int length){</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private boolean lenghtSuperiorToTwo(int length){</span></pre></td></tr>
 
 
 <tr>
@@ -647,9 +647,9 @@ body{
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53016b11_41'>3</a>
 <span>
-1. A : changed conditional boundary &rarr; SURVIVED<br/>
-2. A : negated conditional &rarr; KILLED<br/>
-3. A : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED<br/>
+1. lenghtSuperiorToTwo : changed conditional boundary &rarr; SURVIVED<br/>
+2. lenghtSuperiorToTwo : negated conditional &rarr; KILLED<br/>
+3. lenghtSuperiorToTwo : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED<br/>
 
 </span>
 </td>
@@ -695,7 +695,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private boolean B(char c){</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private boolean charEqualE(char c){</span></pre></td></tr>
 
 
 <tr>
@@ -707,8 +707,8 @@ body{
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53016b11_45'>2</a>
 <span>
-1. B : negated conditional &rarr; KILLED<br/>
-2. B : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED<br/>
+1. charEqualE : negated conditional &rarr; KILLED<br/>
+2. charEqualE : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED<br/>
 
 </span>
 </td>
@@ -754,7 +754,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private boolean C(char d){</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private boolean runTime(char d){</span></pre></td></tr>
 
 
 <tr>
@@ -768,7 +768,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;throw new RuntimeException(&#34;The input does not satisfy the given constraints&#34;);</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;throw new RuntimeException(&#34;The input does not satisfy the given constraints &#34;);&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -782,7 +782,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -793,48 +793,6 @@ body{
 <td class=''>
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53016b11_51'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@53016b11_52'/>
-52
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53016b11_52'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@53016b11_53'/>
-53
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53016b11_53'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@53016b11_54'/>
-54
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53016b11_54'></a>
 <span>
 </span>
 </td>
@@ -921,7 +879,7 @@ body{
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@53016b11_41'/> 
 
-<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>A<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>A<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>A<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest)</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED</p> 
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lenghtSuperiorToTwo<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>lenghtSuperiorToTwo<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>lenghtSuperiorToTwo<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest)</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
@@ -931,7 +889,7 @@ body{
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@53016b11_45'/> 
 
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>B<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>B<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest)</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED</p> 
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>charEqualE<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>charEqualE<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest)</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED</p> 
 </td>
 </tr>
 
@@ -952,7 +910,7 @@ body{
 
 <h2>Tests examined</h2>
 <ul>
-<li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testDoItRuntimeException(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testChallengeException(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest) (2 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testGetInputs(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testChallenge(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest) (4 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testGetInputFormat(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest) (2 ms)</li>
+<li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testDoItRuntimeException(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testChallengeException(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest) (2 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testGetInputs(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testChallenge(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest) (5 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest.testGetInputFormat(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFourthChallengeTest) (1 ms)</li>
 </ul>
 
 <br/>

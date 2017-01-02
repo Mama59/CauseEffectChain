@@ -391,7 +391,7 @@ body{
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@77c66a4f_24'/>
 24
 </td>
@@ -401,7 +401,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;//e.printStackTrace();</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -415,11 +415,11 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@77c66a4f_26'/>
 26
 </td>
@@ -429,7 +429,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -443,7 +443,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;@Override</span></pre></td></tr>
 
 
 <tr>
@@ -457,37 +457,37 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;@Override</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@77c66a4f_29'/>
-29
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_29'></a>
-<span>
-</span>
-</td>
 <td class=''><pre><span  class=''>&#9;public Object doIt(String[] input){</span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@77c66a4f_30'/>
-30
+<a name='org.pitest.mutationtest.report.html.SourceFile@77c66a4f_29'/>
+29
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_30'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_29'>1</a>
 <span>
 1. doIt : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyThirdChallenge::doIt to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
 
 </span>
 </td>
 <td class='covered'><pre><span  class='killed'>&#9;&#9;return recursive(0, input[0], input[1].charAt(0));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@77c66a4f_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_30'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -501,7 +501,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -515,7 +515,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;private String recursive(int i, String word, char c){</span></pre></td></tr>
 
 
 <tr>
@@ -529,21 +529,23 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;private String recursive(int i, String word, char c){</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@77c66a4f_34'/>
 34
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_34'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_34'>1</a>
 <span>
+1. recursive : negated conditional &rarr; KILLED<br/>
+
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if(word.charAt(i) == c)</span></pre></td></tr>
 
 
 <tr>
@@ -555,22 +557,6 @@ body{
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_35'>1</a>
 <span>
-1. recursive : negated conditional &rarr; KILLED<br/>
-
-</span>
-</td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;if(word.charAt(i) == c)</span></pre></td></tr>
-
-
-<tr>
-<td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@77c66a4f_36'/>
-36
-</td>
-<td class='killed'>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_36'>1</a>
-<span>
 1. recursive : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyThirdChallenge::recursive to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
 
 </span>
@@ -580,12 +566,12 @@ body{
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@77c66a4f_37'/>
-37
+<a name='org.pitest.mutationtest.report.html.SourceFile@77c66a4f_36'/>
+36
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_37'>2</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_36'>2</a>
 <span>
 1. recursive : Replaced integer addition with subtraction &rarr; KILLED<br/>
 2. recursive : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyThirdChallenge::recursive to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
@@ -597,12 +583,12 @@ body{
 
 <tr>
 <td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@77c66a4f_38'/>
-38
+<a name='org.pitest.mutationtest.report.html.SourceFile@77c66a4f_37'/>
+37
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_38'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_37'></a>
 <span>
 </span>
 </td>
@@ -611,12 +597,12 @@ body{
 
 <tr>
 <td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@77c66a4f_39'/>
-39
+<a name='org.pitest.mutationtest.report.html.SourceFile@77c66a4f_38'/>
+38
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_39'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_38'></a>
 <span>
 </span>
 </td>
@@ -657,13 +643,23 @@ body{
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@77c66a4f_30'>30</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@77c66a4f_29'>29</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_30'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_29'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>doIt<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyThirdChallenge::doIt to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@77c66a4f_34'>34</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_34'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>recursive<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest)</span></span> negated conditional &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
@@ -673,7 +669,7 @@ body{
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_35'/> 
 
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>recursive<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest)</span></span> negated conditional &rarr; KILLED</p> 
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>recursive<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyThirdChallenge::recursive to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
@@ -682,16 +678,6 @@ body{
 <td>
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_36'/> 
-
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>recursive<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyThirdChallenge::recursive to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@77c66a4f_37'>37</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@77c66a4f_37'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>recursive<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>recursive<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/challenge/MyThirdChallenge::recursive to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
 </td>
@@ -714,7 +700,7 @@ body{
 
 <h2>Tests examined</h2>
 <ul>
-<li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.testChallenge(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.challengeThrowException(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest) (2 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.testGetInputFormat(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.testGetInputs(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest) (0 ms)</li>
+<li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.testChallenge(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.testDoIt(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.challengeThrowException(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest) (2 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.testGetInputFormat(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest.testGetInputs(fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyThirdChallengeTest) (1 ms)</li>
 </ul>
 
 <br/>

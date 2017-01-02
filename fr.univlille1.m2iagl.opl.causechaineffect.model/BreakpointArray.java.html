@@ -563,11 +563,11 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;public String toString(){</span></pre></td></tr>
+<td class=''><pre><span  class=''>        @Override</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_36'/>
 36
 </td>
@@ -577,7 +577,7 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;String s = &#34;[&#34;;</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;public String toString(){</span></pre></td></tr>
 
 
 <tr>
@@ -585,18 +585,13 @@ body{
 <a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_37'/>
 37
 </td>
-<td class='killed'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_37'>4</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_37'></a>
 <span>
-1. toString : changed conditional boundary &rarr; KILLED<br/>
-2. toString : Changed increment from 1 to -1 &rarr; KILLED<br/>
-3. toString : Replaced integer subtraction with addition &rarr; KILLED<br/>
-4. toString : negated conditional &rarr; KILLED<br/>
-
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;for(int i=0;i&#60;array.length - 1;i++){</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>            StringBuilder bld = new StringBuilder();</span></pre></td></tr>
 
 
 <tr>
@@ -610,25 +605,30 @@ body{
 <span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;s += getFilenameAt(i) + &#34;:&#34; + getLineAt(i) + &#34;, &#34;;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>            bld.append(&#34;[&#34;);</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_39'/>
 39
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_39'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_39'>4</a>
 <span>
+1. toString : changed conditional boundary &rarr; KILLED<br/>
+2. toString : Changed increment from 1 to -1 &rarr; KILLED<br/>
+3. toString : Replaced integer subtraction with addition &rarr; KILLED<br/>
+4. toString : negated conditional &rarr; KILLED<br/>
+
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>            for(int i=0;i&#60;array.length - 1;i++){</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_40'/>
 40
 </td>
@@ -638,68 +638,68 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>                bld.append(getFilenameAt(i)).append(&#34;:&#34;).append(getLineAt(i)).append(&#34;, &#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_41'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_41'/>
-41
+<a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_42'/>
+42
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_41'>2</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_42'>2</a>
 <span>
 1. toString : Replaced integer subtraction with addition &rarr; KILLED<br/>
 2. toString : Replaced integer subtraction with addition &rarr; KILLED<br/>
 
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;s += getFilenameAt(array.length - 1) + &#34;:&#34; + getLineAt(array.length - 1) + &#34;]&#34;;</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_42'/>
-42
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_42'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_43'/>
-43
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_43'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''>&#9;&#9;</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>            bld.append(getFilenameAt(array.length - 1)).append(&#34;:&#34;).append(getLineAt(array.length - 1)).append(&#34;]&#34;);</span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_44'/>
-44
+<a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_43'/>
+43
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_44'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_43'>1</a>
 <span>
 1. toString : mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/model/BreakpointArray::toString to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
 
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;return s;</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>            return bld.toString();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_44'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -713,7 +713,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -727,37 +727,37 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_47'/>
-47
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_47'></a>
-<span>
-</span>
-</td>
 <td class=''><pre><span  class=''>&#9;public int length(){</span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_48'/>
-48
+<a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_47'/>
+47
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_48'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_47'>1</a>
 <span>
 1. length : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED<br/>
 
 </span>
 </td>
 <td class='covered'><pre><span  class='killed'>&#9;&#9;return array.length;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_48'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -771,7 +771,7 @@ body{
 <span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 
 <tr>
@@ -782,20 +782,6 @@ body{
 <td class=''>
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_50'></a>
-<span>
-</span>
-</td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@1e495414_51'/>
-51
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_51'></a>
 <span>
 </span>
 </td>
@@ -872,45 +858,45 @@ body{
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_32'/> 
 
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getFilenameAt<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.toString_ValideFileNameAndLineNumber_ShouldReturnFileNameAndLineNumber(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/model/BreakpointArray::getFilenameAt to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getFilenameAt<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.getFilenameAt_BreakpointWithFileNameFirstTest_ShoudReturnFirstTestFileName(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/model/BreakpointArray::getFilenameAt to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1e495414_37'>37</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1e495414_39'>39</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_37'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_39'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.toString_ValideFileNameAndLineNumber_ShouldReturnFileNameAndLineNumber(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.toString_ValideFileNameAndLineNumber_ShouldReturnFileNameAndLineNumber(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.toString_ValideFileNameAndLineNumber_ShouldReturnFileNameAndLineNumber(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.toString_ValideFileNameAndLineNumber_ShouldReturnFileNameAndLineNumber(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest)</span></span> negated conditional &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1e495414_41'>41</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1e495414_42'>42</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_41'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_42'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.toString_ValideFileNameAndLineNumber_ShouldReturnFileNameAndLineNumber(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.toString_ValideFileNameAndLineNumber_ShouldReturnFileNameAndLineNumber(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1e495414_44'>44</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1e495414_43'>43</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_44'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_43'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.toString_ValideFileNameAndLineNumber_ShouldReturnFileNameAndLineNumber(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest)</span></span> mutated return of Object value for fr/univlille1/m2iagl/opl/causechaineffect/model/BreakpointArray::toString to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1e495414_48'>48</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1e495414_47'>47</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_48'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1e495414_47'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>length<br/><b>Killed by : </b>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.length_TwoBreakpoints_ShouldReturnTwo(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest)</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED</p> 
 </td>
@@ -933,7 +919,7 @@ body{
 
 <h2>Tests examined</h2>
 <ul>
-<li>fr.univlille1.m2iagl.opl.causechaineffect.model.CauseEffectChainTest.testToString(fr.univlille1.m2iagl.opl.causechaineffect.model.CauseEffectChainTest) (0 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.length_TwoBreakpoints_ShouldReturnTwo(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.toString_ValideFileNameAndLineNumber_ShouldReturnFileNameAndLineNumber(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest) (0 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.testRemove(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.get_SecondeBreakpointInArray_ShouldReturnSecondTestFileName(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest) (8560 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.getLineAt_BreakPointWithLineNumber7_ShouldReturn7(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest) (0 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.getFilenameAt_BreakpointWithFileNameFirstTest_ShoudReturnFirstTestFileName(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest) (2 ms)</li>
+<li>fr.univlille1.m2iagl.opl.causechaineffect.model.CauseEffectChainTest.testToString(fr.univlille1.m2iagl.opl.causechaineffect.model.CauseEffectChainTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.length_TwoBreakpoints_ShouldReturnTwo(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest) (1 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.toString_ValideFileNameAndLineNumber_ShouldReturnFileNameAndLineNumber(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest) (0 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.testRemove(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest) (0 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.get_SecondeBreakpointInArray_ShouldReturnSecondTestFileName(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest) (0 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest.testDebugChallenge(fr.univlille1.m2iagl.opl.causechaineffect.action.ddebugger.MyDDebuggerTest) (8575 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.getLineAt_BreakPointWithLineNumber7_ShouldReturn7(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest) (0 ms)</li><li>fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest.getFilenameAt_BreakpointWithFileNameFirstTest_ShoudReturnFirstTestFileName(fr.univlille1.m2iagl.opl.causechaineffect.model.BreakpointArrayTest) (1 ms)</li>
 </ul>
 
 <br/>
