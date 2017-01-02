@@ -31,7 +31,7 @@ public class MyFourthChallengeTest {
     @Test
     public void testGetInputFormat() {
         MyFourthChallenge MyFourthChallenge = new MyFourthChallenge();
-        Class expResult = (Class<? extends String>) String.class;
+        Class expResult = String.class;
         Class result = MyFourthChallenge.getInputFormat();
         assertEquals(expResult, result);
     }

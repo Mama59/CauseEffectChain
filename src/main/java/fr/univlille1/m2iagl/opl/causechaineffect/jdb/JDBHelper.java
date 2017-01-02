@@ -39,7 +39,7 @@ public class JDBHelper {
 	public void launch() {
 		try {
 			ProcessBuilder builder = new ProcessBuilder("jdb");
-			builder.directory(new File(Constants.FOLDER));
+			builder.directory(new File(Constants.folder));
 			Process process = builder.start();
 
 			OutputStream stdin = process.getOutputStream();
@@ -72,7 +72,7 @@ public class JDBHelper {
 			if(ex.getMessage() != null && ex.getMessage().equals(Constants.CANAL_MESSAGE)){
 				vars = null;
 				if(verbose)
-					System.out.println("-----------------------------");
+                                {System.out.println("-----------------------------");}
 			} else {
 				ex.printStackTrace();
 			}
@@ -87,10 +87,8 @@ public class JDBHelper {
 	}
 
 	private void writeCommand(String command) throws Exception {
-		// System.out.println(command);
 		if(verbose)
-			System.out.println(command);
-		
+                {System.out.println(command);}
 		writer.write(command + "\n");
 		writer.flush();
 		Thread.sleep(Constants.MS_BETWEEN_COMMAND);
@@ -101,7 +99,7 @@ public class JDBHelper {
 	}
 
 	private void parseVars(InputStream outputStream) throws IOException {
-		this.vars = new HashMap<String, String>();
+		this.vars = new HashMap<>();
 
 		String s = getOutput(outputStream);
 		
@@ -128,17 +126,13 @@ public class JDBHelper {
 	
 	private void parseDupedVars(InputStream outputStream) throws IOException{
 		String s = getOutput(outputStream);
-		
 		s = s.replaceAll("\n", "").replaceAll("main\\[1\\]", "");
-		
-		
 		String[] tmp = s.split(" = ");
-		
 		vars.put(tmp[0].replaceAll(" " , ""), tmp[1]);
 	}
 	
 	private void getVarsToDump(){
-		List<String> list = new ArrayList<String>();
+		List<String> list = new ArrayList<>();
 		for(String key : vars.keySet()){
 			if(vars.get(key).startsWith(Constants.INSTANCE_OF))
 				list.add(key);
@@ -150,15 +144,13 @@ public class JDBHelper {
 	private String getOutput(InputStream outputStream) throws IOException {
 		byte[] buffer = new byte[100000];
 		int bytesRead;
-		String s = "";
+                StringBuilder bld = new StringBuilder();
 		while (outputStream.available() > 0) {
 			bytesRead = outputStream.read(buffer);
-			if (bytesRead > 0) {
-				s += new String(buffer, 0, bytesRead) + "\n";
-			}
-		}
-
-		return s;
+                        if (bytesRead > 0) 
+                        { bld.append(new String(buffer, 0, bytesRead)).append("\n");}
+                }
+                String str = bld.toString();
+		return str;
 	}
-
 }

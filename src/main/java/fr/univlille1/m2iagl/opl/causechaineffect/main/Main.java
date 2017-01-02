@@ -6,21 +6,19 @@ import fr.univlille1.m2iagl.opl.causechaineffect.challenge.MyFirstChallenge;
 import fr.univlille1.m2iagl.opl.causechaineffect.model.Constants;
 
 public class Main {
-
-	public static void main(String[] args) {
-
-		Constants.init();
-
-		boolean verbose = false, allVars = false;
-
-		for(int i=0;i<args.length;i++){
-			if(args[i].equals("-v"))
-				verbose = true;
-			else if (args[i].equals("-a"))
-				allVars = true;
-		}
-
-		DDebugger<?> d = new MyDDebugger<String>(verbose, allVars);
-		System.out.println(d.debug(new MyFirstChallenge()));	
-	}
+    
+    private Main() { throw new IllegalAccessError("Main class");}
+    
+    public static void main(String[] args) {
+        Constants.init();
+        boolean verbose = false;
+        boolean allVars = false;
+        for (String arg : args) {
+            if (("-v").equals(arg)) 
+            {verbose = true;} 
+            else if (("-a").equals(arg)) 
+            {allVars = true;}}
+        
+        DDebugger<String> d = new MyDDebugger<>(verbose, allVars);
+        System.out.println(d.debug(new MyFirstChallenge()));}
 }

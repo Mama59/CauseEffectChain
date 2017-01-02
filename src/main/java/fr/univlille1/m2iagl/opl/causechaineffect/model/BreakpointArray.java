@@ -32,16 +32,15 @@ public class BreakpointArray {
 		return array[i].getFilename();
 	}
 	
+        @Override
 	public String toString(){
-		String s = "[";
-		for(int i=0;i<array.length - 1;i++){
-			s += getFilenameAt(i) + ":" + getLineAt(i) + ", ";
-		}
-		
-		s += getFilenameAt(array.length - 1) + ":" + getLineAt(array.length - 1) + "]";
-		
-		
-		return s;
+            StringBuilder bld = new StringBuilder();
+            bld.append("[");
+            for(int i=0;i<array.length - 1;i++){
+                bld.append(getFilenameAt(i)).append(":").append(getLineAt(i)).append(", ");
+            }
+            bld.append(getFilenameAt(array.length - 1)).append(":").append(getLineAt(array.length - 1)).append("]");
+            return bld.toString();
 	}
 	
 	public int length(){

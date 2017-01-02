@@ -14,11 +14,13 @@ import java.util.Map;
 
 public class MyDDebugger<I> implements DDebugger<I> {
 
-	private int rightInputIndex, wrongInputIndex;
+	private int rightInputIndex;
+        private int wrongInputIndex;
 	private BreakpointArray breakpointArray;
 	private String exceptionType;
 	
-	private boolean verbose, allVars;
+	private boolean verbose;
+        private boolean allVars;
 	
 	public MyDDebugger(boolean verbose, boolean allVars){
 		this.verbose = verbose;
@@ -26,6 +28,7 @@ public class MyDDebugger<I> implements DDebugger<I> {
 	}
 
 
+        @Override
 	public <I> CauseEffectChain debug(Challenge<I> challenge) {
 		computeRightAndWrongInput(challenge);
 
@@ -36,7 +39,7 @@ public class MyDDebugger<I> implements DDebugger<I> {
 
 
 
-		return internalDebug(challenge, rightInputIndex, wrongInputIndex, breakpointArray);
+		return internalDebug(rightInputIndex, wrongInputIndex, breakpointArray);
 	}
 
 	private <I> void computeRightAndWrongInput(Challenge<I> challenge){
@@ -57,7 +60,7 @@ public class MyDDebugger<I> implements DDebugger<I> {
 
 	}
 
-	private <I> CauseEffectChain internalDebug(Challenge<I> challenge, int rightInputIndex, int wrongInputIndex, BreakpointArray breakpointArray) {
+	private <I> CauseEffectChain internalDebug(int rightInputIndex, int wrongInputIndex, BreakpointArray breakpointArray) {
 
 		// On lance les 2 programmes pour chaque élément de la chaine de cause à effet pour faire la différence entre toutes les variables locales
 		CauseEffectChain causeEffectChain = new CauseEffectChain(breakpointArray, exceptionType);
@@ -65,12 +68,12 @@ public class MyDDebugger<I> implements DDebugger<I> {
 		int cpt=0;
 		for(int i=0;i<breakpointArray.length();i++){
 			if(breakpointArray.get(i).getLine() != 1){
-				Map<String, String> rightVars = getVarsAtBreakpoint(challenge, rightInputIndex, breakpointArray.get(i));
-				Map<String, String> wrongVars = getVarsAtBreakpoint(challenge, wrongInputIndex, breakpointArray.get(i));
+				Map<String, String> rightVars = getVarsAtBreakpoint(rightInputIndex, breakpointArray.get(i));
+				Map<String, String> wrongVars = getVarsAtBreakpoint(wrongInputIndex, breakpointArray.get(i));
 				
 				List<String> keys;
 				if(rightVars == null || allVars)
-					keys = new ArrayList<String>(wrongVars.keySet());
+					keys = new ArrayList<>(wrongVars.keySet());
 				else
 					keys = Helper.getKeysWithDifferentValues(rightVars, wrongVars);
 
@@ -78,15 +81,14 @@ public class MyDDebugger<I> implements DDebugger<I> {
 				causeEffectChain.addEntries(cpt, keys, rightVars, wrongVars);
 				cpt++;
 			}
-			//System.exit(1);
 		}
 		
 		if(verbose)
-			System.out.println("*************************************************");
+                {System.out.println("*************************************************");}
 		return causeEffectChain;
 	}
 
-	private <I> Map<String, String> getVarsAtBreakpoint(Challenge<I> challenge, int index, Breakpoint breakpoint){
+	private <I> Map<String, String> getVarsAtBreakpoint(int index, Breakpoint breakpoint){
 
 		JDBHelper jdbHelper = new JDBHelper(verbose, Constants.JDB_MAIN, breakpoint, index);
 		jdbHelper.launch();
@@ -107,7 +109,7 @@ public class MyDDebugger<I> implements DDebugger<I> {
 			StackTraceElement[] array =  e.getStackTrace();
 			exceptionType = e.getClass().toString() + " " + e.getMessage();
 
-			List<Breakpoint> breakpoints = new ArrayList<Breakpoint>();
+			List<Breakpoint> breakpoints = new ArrayList<>();
 			for(int i=array.length-1;i>=0;i--){
 				StackTraceElement stackTraceElement = array[i];
 				String className = stackTraceElement.getClassName();

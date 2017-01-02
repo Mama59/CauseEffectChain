@@ -25,20 +25,19 @@ public class MyFifthChallenge implements Challenge<String>{
 			doIt(input);
 		} catch (Exception e) {
 			System.out.println("exception");
-			//e.printStackTrace();
 		}
 	}
 
 	@Override
 	public String doIt(String input) {
-		Map<Character, Integer> charCpt = new HashMap<Character, Integer>();
+		Map<Character, Integer> charCpt = new HashMap<>();
 		initMap(charCpt);
 		
 		return recursif(input, charCpt);
 	}
 	
 	private String recursif(String input, Map<Character, Integer> charCpt){
-		if(input.equals("")){
+		if(("").equals(input)){
 			char c = getCharMostUsed(charCpt);
 			return "The most used character is " + c + " with " + charCpt.get(c) + " uses !";
 		}
@@ -66,7 +65,7 @@ public class MyFifthChallenge implements Challenge<String>{
 	}
 	
 	private char getCharMostUsed(Map<Character, Integer> charCpt){
-		List<Character> keyList = new ArrayList<Character>(charCpt.keySet());
+		List<Character> keyList = new ArrayList<>(charCpt.keySet());
 		
 		char c = keyList.get(0);
 		int value = charCpt.get(c);
